@@ -2,7 +2,8 @@ name: CI - Build & Push Product & Inventory to ECR
 
 on:
   push:
-    branches: [ "main" ]
+    branches: 
+      - "main"
   workflow_dispatch:
 
 jobs:
@@ -46,18 +47,16 @@ jobs:
       - name: Tag Product Service image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: "product-service"
-          IMAGE_TAG: "latest"
-        run: |
-          docker tag product-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          ECR_REPOSITORY: product-service
+          IMAGE_TAG: latest
+        run: docker tag product-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
       - name: Push Product Service image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: "product-service"
-          IMAGE_TAG: "latest"
-        run: |
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          ECR_REPOSITORY: product-service
+          IMAGE_TAG: latest
+        run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
       # -------------------------
       # INVENTORY SERVICE
@@ -68,15 +67,13 @@ jobs:
       - name: Tag Inventory Service image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: "inventory-service"
-          IMAGE_TAG: "latest"
-        run: |
-          docker tag inventory-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          ECR_REPOSITORY: inventory-service
+          IMAGE_TAG: latest
+        run: docker tag inventory-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
       - name: Push Inventory Service image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: "inventory-service"
-          IMAGE_TAG: "latest"
-        run: |
-          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+          ECR_REPOSITORY: inventory-service
+          IMAGE_TAG: latest
+        run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG

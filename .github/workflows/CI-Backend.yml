@@ -18,10 +18,11 @@ jobs:
       # CLONAR REPOSITORIOS
       # -------------------------
       - name: Clonar Product Service
-        run: git clone https://github.com/DevOpsObligatorio/DevOpsProduct-Service.git product-service
+        run: git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/DevOpsObligatorio/DevOpsProduct-Service.git product-service
 
       - name: Clonar Inventory Service
-        run: git clone https://github.com/DevOpsObligatorio/DevOps-Inventory-Service.git inventory-service
+        run: git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/DevOpsObligatorio/DevOps-Inventory-Service.git inventory-service
+
 
       # -------------------------
       # AWS - LOGIN EN ECR

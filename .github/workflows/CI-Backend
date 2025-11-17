@@ -1,4 +1,4 @@
-name: CI - Build & Push 2 Backends to ECR
+name: CI - Build & Push Product & Inventory to ECR
 
 on:
   push:
@@ -38,7 +38,7 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       # -------------------------
-      # BUILD Y PUSH - PRODUCT SERVICE
+      # PRODUCT SERVICE
       # -------------------------
       - name: Build Product Service image
         run: docker build -t product-service ./product-service
@@ -60,7 +60,7 @@ jobs:
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
       # -------------------------
-      # BUILD Y PUSH - INVENTORY SERVICE
+      # INVENTORY SERVICE
       # -------------------------
       - name: Build Inventory Service image
         run: docker build -t inventory-service ./inventory-service
@@ -80,4 +80,5 @@ jobs:
           IMAGE_TAG: "latest"
         run: |
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+
 

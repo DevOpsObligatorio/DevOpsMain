@@ -80,5 +80,3 @@ jobs:
           IMAGE_TAG: "latest"
         run: |
           docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-
-

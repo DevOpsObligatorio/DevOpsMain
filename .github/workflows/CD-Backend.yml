@@ -53,3 +53,4 @@ jobs:
           kubectl apply -n microservices -f k8s/postgres
           kubectl apply -n microservices -f k8s/product-service
           kubectl apply -n microservices -f k8s/redis
+          kubectl apply -n microservices -f k8s/storage.yaml

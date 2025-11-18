@@ -37,27 +37,6 @@ jobs:
             --name ${{ secrets.EKS_CLUSTER }}
 
       # ------------------------
-      # INSTALAR LOAD BALANCER CONTROLLER
-      # ------------------------
-      - name: Install AWS Load Balancer Controller
-        run: |
-          kubectl apply -f https://github.com/jetstack/cert-manager/releases/latest/download/cert-manager.yaml
-
-          kubectl apply -k \
-            "github.com/aws/eks-charts/stable/aws-load-balancer-controller//crds?ref=master"
-
-          helm repo add eks https://aws.github.io/eks-charts
-          helm repo update
-
-          helm upgrade -i aws-load-balancer-controller eks/aws-load-balancer-controller \
-            --set clusterName=${{ secrets.EKS_CLUSTER }} \
-            --set serviceAccount.create=false \
-            --set region=${{ secrets.AWS_REGION }} \
-            --set vpcId=${{ secrets.VPC_ID }} \
-            --set serviceAccount.name=aws-load-balancer-controller \
-            --namespace kube-system
-
-      # ------------------------
       # CREAR NAMESPACE SOLO SI NO EXISTE
       # ------------------------
       - name: Create namespace if not exists
@@ -65,13 +44,12 @@ jobs:
           kubectl get ns microservices || kubectl create ns microservices
 
       # ------------------------
-      # APLICAR MANIFIESTOS NECESARIOS
+      # APLICAR SOLO MANIFIESTOS NECESARIOS
       # ------------------------
-      - name: Apply manifests
+      - name: Apply specific manifests
         run: |
-          kubectl apply -n microservices -f k8s/postgres
-          kubectl apply -n microservices -f k8s/redis
-          kubectl apply -n microservices -f k8s/product-service
-          kubectl apply -n microservices -f k8s/inventory-service
           kubectl apply -n microservices -f k8s/ingress
-
+          kubectl apply -n microservices -f k8s/inventory-service
+          kubectl apply -n microservices -f k8s/postgres
+          kubectl apply -n microservices -f k8s/product-service
+          kubectl apply -n microservices -f k8s/redis

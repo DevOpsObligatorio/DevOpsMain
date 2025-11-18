@@ -1,6 +1,6 @@
 name: CI - Build & Push Product & Inventory to ECR
 
-on:
+on: 
   push:
     branches: 
       - "main"

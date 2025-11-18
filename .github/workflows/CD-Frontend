@@ -1,0 +1,51 @@
+name: CD - Deploy Frontend to EKS
+
+on:
+  workflow_run:
+    workflows: ["CI - Build & Push Frontend to ECR"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      # ------------------------
+      # CONFIGURAR CREDENCIALES AWS
+      # ------------------------
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      # ------------------------
+      # OBTENER KUBECONFIG DEL CLUSTER
+      # ------------------------
+      - name: Update kubeconfig
+        run: |
+          aws eks update-kubeconfig \
+            --region ${{ secrets.AWS_REGION }} \
+            --name ${{ secrets.EKS_CLUSTER }}
+
+      # ------------------------
+      # CREAR NAMESPACE SOLO SI NO EXISTE
+      # ------------------------
+      - name: Create namespace if not exists
+        run: |
+          kubectl get ns microservices || kubectl create ns microservices
+
+      # ------------------------
+      # APLICAR MANIFIESTOS DEL FRONTEND
+      # ------------------------
+      - name: Deploy Frontend (API Gateway)
+        run: |
+          kubectl apply -n microservices -f k8s/api-gateway
+

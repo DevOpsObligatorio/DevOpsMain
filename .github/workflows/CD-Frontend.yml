@@ -1,4 +1,4 @@
-name: CD - Deploy Frontend to EKS
+name: CD - Deploy Frontend to EKS 
 
 on:
   workflow_run:

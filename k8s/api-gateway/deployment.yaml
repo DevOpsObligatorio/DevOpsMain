@@ -25,3 +25,4 @@ spec:
             - name: REDIS_URL
               value: "redis:6379"
 
+

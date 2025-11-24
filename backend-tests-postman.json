@@ -1,0 +1,184 @@
+{
+  "info": {
+    "name": "Full Backend Synced Tests",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_postman_id": "a1b2c3d4-e5f6-7890"
+  },
+  "item": [
+    {
+      "name": "1 - Create Product",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": "{{PRODUCT_URL}}/products",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Test Product\",\"description\":\"Auto test\",\"price\":99.99,\"category\":\"test\"}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status 201\", function () {",
+              "  pm.response.to.have.status(201);",
+              "});",
+              "",
+              "var json = pm.response.json();",
+              "pm.environment.set(\"product_id\", json.id);",
+              "",
+              "console.log('CREATED PRODUCT ID:', json.id);"
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "2 - Get Product by ID",
+      "request": {
+        "method": "GET",
+        "url": "{{PRODUCT_URL}}/products/{{product_id}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "3 - Create Inventory With Product ID",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": "{{INVENTORY_URL}}/inventory",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"product_id\": {{product_id}}, \"quantity\": 100, \"warehouse\": \"Test Storage\"}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status 201\", function () {",
+              "  pm.response.to.have.status(201);",
+              "});",
+              "",
+              "var json = pm.response.json();",
+              "pm.environment.set(\"inventory_id\", json.id);",
+              "console.log('CREATED INVENTORY ID:', json.id);"
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "4 - Get Inventory by ID",
+      "request": {
+        "method": "GET",
+        "url": "{{INVENTORY_URL}}/inventory/{{inventory_id}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "5 - Update Inventory",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "url": "{{INVENTORY_URL}}/inventory/{{inventory_id}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"quantity\": 150}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status 200\", function () {",
+              "  pm.response.to.have.status(200);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "6 - Delete Inventory",
+      "request": {
+        "method": "DELETE",
+        "url": "{{INVENTORY_URL}}/inventory/{{inventory_id}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status 204\", function () {",
+              "  pm.response.to.have.status(204);",
+              "});"
+            ]
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "7 - Delete Product",
+      "request": {
+        "method": "DELETE",
+        "url": "{{PRODUCT_URL}}/products/{{product_id}}"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "pm.test(\"Status 204\", function () {",
+              "  pm.response.to.have.status(204);",
+              "});"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+
+  "event": [],
+  "variable": [
+    { "key": "PRODUCT_URL", "value": "http://localhost:8001" },
+    { "key": "INVENTORY_URL", "value": "http://localhost:8002" }
+  ]
+}

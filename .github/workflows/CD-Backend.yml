@@ -48,7 +48,6 @@ jobs:
       # ------------------------
       - name: Apply specific manifests
         run: |   
-          kubectl apply -f k8s/Lambda-discord
           kubectl apply -n microservices -f k8s/redis
           kubectl apply -n microservices -f k8s/postgres
           kubectl apply -n microservices -f k8s/inventory-service

@@ -47,7 +47,8 @@ jobs:
       # APLICAR SOLO MANIFIESTOS NECESARIOS
       # ------------------------
       - name: Apply specific manifests
-        run: |
+        run: |   
+          kubectl apply -n microservices -f k8s/Lambda-discord
           kubectl apply -n microservices -f k8s/redis
           kubectl apply -n microservices -f k8s/postgres
           kubectl apply -n microservices -f k8s/inventory-service

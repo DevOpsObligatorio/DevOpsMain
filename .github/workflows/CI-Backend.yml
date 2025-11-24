@@ -1,4 +1,4 @@
-name: CI - Build & Push Product & Inventory to ECR
+name: CI - Build, Test & Push Product & Inventory to ECR
 
 on: 
   push:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-and-push:
+  build-test-and-push:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,10 +23,53 @@ jobs:
       - name: Clonar Inventory Service
         run: git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/DevOpsObligatorio/DevOps-Inventory-Service.git inventory-service
 
+      # -------------------------
+      # Instalar Newman
+      # -------------------------
+      - name: Install Newman
+        run: |
+          npm install -g newman
 
       # -------------------------
-      # AWS - LOGIN EN ECR
+      # Levantar Docker Compose para pruebas
       # -------------------------
+      - name: Docker Compose Up (Tests Environment)
+        run: docker compose -f docker-compose.ci.yml up -d --build
+
+      # -------------------------
+      # Esperar servicios
+      # -------------------------
+      - name: Esperar Product Service
+        run: |
+          for i in {1..20}; do
+            if curl -s http://localhost:8001/health | grep -q "healthy"; then
+              echo "Product OK"; exit 0
+            fi
+            echo "waiting product..."; sleep 5
+          done
+          exit 1
+
+      - name: Esperar Inventory Service
+        run: |
+          for i in {1..20}; do
+            if curl -s http://localhost:8002/health | grep -q "healthy"; then
+              echo "Inventory OK"; exit 0
+            fi
+            echo "waiting inventory..."; sleep 5
+          done
+          exit 1
+
+      # -------------------------
+      # Correr Tests Postman
+      # -------------------------
+      - name: Run Synced Backend Tests
+        run: |
+          newman run backend-tests-postman.json
+
+      # -------------------------
+      # Si todo OK → Build & Push
+      # -------------------------
+
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -39,9 +82,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      # -------------------------
       # PRODUCT SERVICE
-      # -------------------------
       - name: Build Product Service image
         run: docker build -t product-service ./product-service
 
@@ -59,9 +100,7 @@ jobs:
           IMAGE_TAG: latest
         run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
 
-      # -------------------------
       # INVENTORY SERVICE
-      # -------------------------
       - name: Build Inventory Service image
         run: docker build -t inventory-service ./inventory-service
 
@@ -78,3 +117,4 @@ jobs:
           ECR_REPOSITORY: inventory-service
           IMAGE_TAG: latest
         run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+

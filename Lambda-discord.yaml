@@ -1,0 +1,84 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: event-exporter
+
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: event-exporter-sa
+  namespace: event-exporter
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: event-exporter-role
+rules:
+  - apiGroups: [""]
+    resources: ["events"]
+    verbs: ["get", "list", "watch"]
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: event-exporter-rolebinding
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: event-exporter-role
+subjects:
+  - kind: ServiceAccount
+    name: event-exporter-sa
+    namespace: event-exporter
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: event-exporter-config
+  namespace: event-exporter
+data:
+  config.yaml: |
+    logLevel: info
+    receivers:
+      - name: discord
+        webhook:
+          endpoint: "https://discord.com/api/webhooks/1442647997149220956/_HV7PjI0wCu7wIgXL9pAaIxx8za9Uefh5Q5n2KMkNJhgX8kBQXlVVG5FvPAPvBBcGYOv"
+
+    route:
+      routes:
+        - match:
+            - kind: Event
+          receivers:
+            - discord
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: event-exporter
+  namespace: event-exporter
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: event-exporter
+  template:
+    metadata:
+      labels:
+        app: event-exporter
+    spec:
+      serviceAccountName: event-exporter-sa
+      containers:
+        - name: event-exporter
+          image: ghcr.io/resmoio/kubernetes-event-exporter:latest
+          volumeMounts:
+            - name: config
+              mountPath: /etc/event-exporter
+      volumes:
+        - name: config
+          configMap:
+            name: event-exporter-config

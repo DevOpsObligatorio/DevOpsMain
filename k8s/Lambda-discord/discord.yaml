@@ -78,7 +78,12 @@ spec:
           volumeMounts:
             - name: config
               mountPath: /etc/event-exporter
+              readOnly: true
       volumes:
         - name: config
           configMap:
             name: event-exporter-config
+            items:
+              - key: config.yaml
+                path: config.yaml
+

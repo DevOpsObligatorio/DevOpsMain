@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: product-service
-          image: ${ECR_REGISTRY}/product-service-${ENVIRONMENT}:latest
+          image: ${AWS_ACCOUNT}.dkr.ecr.us-east-1.amazonaws.com/product-service-${ENVIRONMENT}:latest
           ports:
             - containerPort: 8001
           env:
@@ -22,6 +22,7 @@ spec:
               value: "postgresql://admin:admin123@postgres:5432/microservices_db"
             - name: REDIS_URL
               value: "redis://redis:6379"
+
 
 
 

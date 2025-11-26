@@ -58,6 +58,10 @@ jobs:
       # ------------------------
       # NOTIFICACIÓN CON LAMBDA
       # ------------------------
+      - name: Create payload
+        run: |
+          echo '{"message": "El pipeline terminó con éxito 🚀"}' > payload.json
+        
       - name: Notify Lambda
         run: |
           aws lambda invoke \

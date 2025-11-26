@@ -48,6 +48,20 @@ jobs:
         run: |
           kubectl get ns microservices || kubectl create ns microservices
 
+
+      # -----------------------------
+      # REEMPLAZAR VARIABLES SOLO EN API-GATEWAY
+      # -----------------------------
+      - name: Reemplazar variables en manifests (API Gateway)
+        env:
+          AWS_ACCOUNT: ${{ secrets.AWS_ACCOUNT }}
+          ENVIRONMENT: ${{ env.ENVIRONMENT }}
+        run: |
+          find k8s/api-gateway -type f -name "*.yaml" -print0 | while IFS= read -r -d '' file; do
+            sed -i "s|\${AWS_ACCOUNT}|${AWS_ACCOUNT}|g" "$file"
+            sed -i "s|\${ENVIRONMENT}|${ENVIRONMENT}|g" "$file"
+          done
+
       # ------------------------
       # APLICAR MANIFIESTOS DEL FRONTEND
       # ------------------------

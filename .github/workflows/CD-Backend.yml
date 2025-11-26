@@ -63,12 +63,9 @@ jobs:
           aws lambda invoke \
           --function-name pipeline-notify-default \
           --invocation-type RequestResponse \
-          --payload '{
-            "estado": "éxito",
-            "mensaje": "Despliegue en EKS completado correctamente",
-            "fecha_hora": "'$(date +"%Y-%m-%d %H:%M:%S")'",
-            "flujo_trabajo": "'${{ github.workflow }}'",
-            "repositorio": "'${{ github.repository }}'"
+          --payload "{\"status\":\"success\",\"message\":\"Deployment completed\",\"timestamp\":\"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\",\"workflow\":\"${{ github.workflow }}\",\"repository\":\"${{ github.repository }}\"}" \
+          --cli-binary-format raw-in-base64-out \
+          response.json
               }' \
           --cli-binary-format raw-in-base64-out \
           response.json

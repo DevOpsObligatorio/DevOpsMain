@@ -60,7 +60,7 @@ jobs:
       # ------------------------
       - name: Crear payload
         run: |
-          echo '{"message": "El pipeline termino con exito"}' > payload.json
+          printf '{"message": "El pipeline termino con exito"}' > payload.json
 
       - name: Notificar Lambda
         run: |

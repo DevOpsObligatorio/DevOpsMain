@@ -2,7 +2,7 @@ name: CD - Deploy Frontend to EKS
 
 on:
   workflow_run:
-    workflows: ["CI - Build & Push Frontend to ECR"]
+    workflows: ["CD - Deploy Frontend to EKS "]
     types:
       - completed
 

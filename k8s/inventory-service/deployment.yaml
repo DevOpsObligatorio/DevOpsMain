@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: inventory-service
-          image: 970358481284.dkr.ecr.us-east-1.amazonaws.com/inventory-service:latest
+          image: ${ECR_REGISTRY}/inventory-service-${ENVIRONMENT}:latest
           ports:
             - containerPort: 8002
           env:

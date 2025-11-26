@@ -12,52 +12,13 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     env:
-      ENVIRONMENT: ${{ github.event.workflow_run.head_branch }}   # main | dev | test
+      ENVIRONMENT: ${{ github.event.workflow_run.head_branch }}  # main | dev | test
+      AWS_REGION: ${{ secrets.AWS_REGION }}
 
     steps:
-      # ------------------------
-      # CHECKOUT DEL REPO
-      # ------------------------
       - name: Checkout repo
         uses: actions/checkout@v4
 
-      # ------------------------
-      # CONFIGURAR CREDENCIALES AWS
-      # ------------------------
-      - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
-          aws-region: ${{ secrets.AWS_REGION }}
-name: CD - Deploy backend to EKS
-
-on:
-  workflow_run:
-    workflows: ["CI - Build & Push Backend to ECR"]
-    types:
-      - completed
-
-env:
-  ENVIRONMENT: ${{ github.event.workflow_run.head_branch }}   # main | dev | test
-  IMAGE_TAG: ${{ github.event.workflow_run.head_branch }}     # main | dev | test
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-
-    steps:
-      # ------------------------
-      # CHECKOUT
-      # ------------------------
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      # ------------------------
-      # AWS CREDS
-      # ------------------------
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -66,62 +27,56 @@ jobs:
           aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ${{ secrets.AWS_REGION }}
 
-      # ------------------------
-      # OBTENER CLUSTER DINÁMICO
-      # main  → main-eks-cluster
-      # dev   → dev-eks-cluster
-      # test  → test-eks-cluster
-      # ------------------------
+      # -----------------------------
+      # SET CLUSTER NAME Y LAMBDA
+      # -----------------------------
+      - name: Definir nombres dinámicos
+        id: names
+        run: |
+          echo "cluster_name=${ENVIRONMENT}-eks-cluster" >> $GITHUB_OUTPUT
+          echo "lambda_name=pipeline-notify-${ENVIRONMENT}" >> $GITHUB_OUTPUT
+
+      # -----------------------------
+      # KUBECONFIG
+      # -----------------------------
       - name: Update kubeconfig
         run: |
-          CLUSTER_NAME="${{ env.ENVIRONMENT }}-eks-cluster"
-          echo "Cluster dinámico: $CLUSTER_NAME"
-
           aws eks update-kubeconfig \
-            --region ${{ secrets.AWS_REGION }} \
-            --name "$CLUSTER_NAME"
+            --region $AWS_REGION \
+            --name ${{ steps.names.outputs.cluster_name }}
 
-      # ------------------------
-      # NAMESPACE SI NO EXISTE
-      # ------------------------
       - name: Create namespace if not exists
         run: |
           kubectl get ns microservices || kubectl create ns microservices
 
-      # ------------------------
-      # SUSTITUIR VARIABLES EN MANIFESTS (.envsubst)
-      # IMAGE = ${ECR_REGISTRY}/service-${ENVIRONMENT}:latest
-      # ------------------------
-      - name: Prepare manifests with ENV variables
-        env:
-          ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+      # -----------------------------
+      # REEMPLAZAR VARIABLES EN MANIFESTS
+      # -----------------------------
+      - name: Reemplazar variables en manifests
         run: |
-          mkdir rendered
-
-          for file in k8s/*/*.yaml; do
-            echo "Procesando $file"
-            envsubst < "$file" > "rendered/$(basename $file)"
+          find k8s -type f -name "*.yaml" -print0 | while IFS= read -r -d '' file; do
+            sed -i "s|\${ENVIRONMENT}|${ENVIRONMENT}|g" "$file"
           done
 
-      # ------------------------
-      # APLICAR MANIFESTS RENDERIZADOS
-      # ------------------------
+      # -----------------------------
+      # APPLY MANIFESTS
+      # -----------------------------
       - name: Apply manifests
         run: |
-          kubectl apply -n microservices -f rendered
+          kubectl apply -n microservices -f k8s/redis
+          kubectl apply -n microservices -f k8s/postgres
+          kubectl apply -n microservices -f k8s/inventory-service
+          kubectl apply -n microservices -f k8s/product-service
 
-      # ------------------------
-      # NOTIFICAR LAMBDA DEL AMBIENTE
-      # pipeline-notify-main | dev | test
-      # ------------------------
+      # -----------------------------
+      # LAMBDA NOTIFICATION
+      # -----------------------------
       - name: Notificar Lambda
         run: |
-          LAMBDA_NAME="pipeline-notify-${{ env.ENVIRONMENT }}"
-
           aws lambda invoke \
-            --function-name "$LAMBDA_NAME" \
+            --function-name ${{ steps.names.outputs.lambda_name }} \
             --invocation-type RequestResponse \
-            --payload '{"message":"Backend desplegado correctamente"}' \
+            --payload '{"message":"Pipeline finalizado con éxito"}' \
             --cli-binary-format raw-in-base64-out \
             response.json
 

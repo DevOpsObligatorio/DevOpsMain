@@ -60,7 +60,7 @@ jobs:
       # ------------------------
       - name: Crear payload
         run: |
-          printf '%s' '{"message": "El pipeline termino con exito"}' > payload.json
+          echo '{"message": "El pipeline termino con exito"}' | jq -c . > payload.json
 
       - name: Notificar Lambda
         run: |

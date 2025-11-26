@@ -14,7 +14,7 @@ jobs:
 
     env:
       ENVIRONMENT: ${{ github.ref_name }}   # main | dev | test
-      IMAGE_TAG: ${{ github.ref_name }}     # main | dev | test
+      IMAGE_TAG: latest                     
 
     steps:
       - name: Checkout current repo
@@ -68,8 +68,7 @@ jobs:
       # Tests Postman
       # -------------------------
       - name: Run Synced Backend Tests
-        run: |
-          newman run backend-tests-postman.json
+        run: newman run backend-tests-postman.json
 
       # -------------------------
       # AWS Login
@@ -97,15 +96,13 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: product-service-${{ env.ENVIRONMENT }}
-          IMAGE_TAG: ${{ env.IMAGE_TAG }}
-        run: docker tag product-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        run: docker tag product-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:latest
 
       - name: Push Product Service image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: product-service-${{ env.ENVIRONMENT }}
-          IMAGE_TAG: ${{ env.IMAGE_TAG }}
-        run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
 
       # ================================================================
       # INVENTORY SERVICE
@@ -118,14 +115,10 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: inventory-service-${{ env.ENVIRONMENT }}
-          IMAGE_TAG: ${{ env.IMAGE_TAG }}
-        run: docker tag inventory-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        run: docker tag inventory-service:latest $ECR_REGISTRY/$ECR_REPOSITORY:latest
 
       - name: Push Inventory Service image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: inventory-service-${{ env.ENVIRONMENT }}
-          IMAGE_TAG: ${{ env.IMAGE_TAG }}
-        run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
-
-
+        run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest

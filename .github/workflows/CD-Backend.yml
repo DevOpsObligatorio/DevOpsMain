@@ -61,7 +61,7 @@ jobs:
       - name: Notify via Lambda
         uses: aws-actions/aws-lambda-invoke@v1
         with:
-          function-name: pipeline-notify-dev
+          function-name: pipeline-notify-default
           payload: |
             {
               "message": "🚀 El pipeline terminó con éxito"

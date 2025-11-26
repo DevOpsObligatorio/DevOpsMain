@@ -63,5 +63,5 @@ jobs:
           aws lambda invoke \
           --function-name pipeline-notify-default \
           --invocation-type RequestResponse \
-          --payload '{"message": "🚀 El pipeline terminó con éxito"}' \
+          --payload file://payload.json \
             response.json

@@ -59,11 +59,11 @@ jobs:
       # NOTIFICACIÓN CON LAMBDA
       # ------------------------
       - name: Notify via Lambda
-        uses: aws-actions/aws-lambda-invoke@v1
+        uses: aws-actions/aws-cli-action@v2
         with:
-          function-name: pipeline-notify-default
-          payload: |
-            {
-              "message": "🚀 El pipeline terminó con éxito"
-            }
+          awscli-command: |
+            aws lambda invoke \
+            --function-name pipeline-notify-default \
+            --payload '{ "message": "🚀 El pipeline terminó con éxito"}' \
+            response.json
 

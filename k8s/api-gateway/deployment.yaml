@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api-gateway
-          image: ${ECR_REGISTRY}/api-gateway-${ENVIRONMENT}:latest
+          image: ${AWS_ACCOUNT}.dkr.ecr.us-east-1.amazonaws.com/api-gateway-${ENVIRONMENT}:latest
           ports:
             - containerPort: 8000
           env:
@@ -24,6 +24,7 @@ spec:
               value: "http://inventory-service:8002"
             - name: REDIS_URL
               value: "redis:6379"
+
 
 
 

@@ -4,24 +4,33 @@ on:
   push:
     branches:
       - "main"
+      - "dev"
+      - "test"
   workflow_dispatch:
 
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
 
+    env:
+      ENVIRONMENT: ${{ github.ref_name }}   # main | dev | test
+      IMAGE_TAG: ${{ github.ref_name }}     # main | dev | test
+
     steps:
+      # -------------------------
+      # CHECKOUT
+      # -------------------------
       - name: Checkout current repo
         uses: actions/checkout@v4
 
       # -------------------------
-      # CLONAR FRONTEND (API GATEWAY)
+      # CLONAR FRONTEND
       # -------------------------
       - name: Clonar Frontend (API Gateway)
         run: git clone https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/DevOpsObligatorio/DevOpsFront.git api-gateway
 
       # -------------------------
-      # AWS - LOGIN EN ECR
+      # AWS LOGIN
       # -------------------------
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -36,21 +45,23 @@ jobs:
         uses: aws-actions/amazon-ecr-login@v2
 
       # -------------------------
-      # BUILD FRONTEND IMAGE
+      # BUILD IMAGE
       # -------------------------
       - name: Build Frontend image
         run: docker build -t api-gateway ./api-gateway
 
-      - name: Tag Frontend image
+      # -------------------------
+      # TAG DINÁMICO USANDO ENVIRONMENT
+      # -------------------------
+      - name: Tag image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: api-gateway
-          IMAGE_TAG: latest
-        run: docker tag api-gateway:latest $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        run: docker tag api-gateway:latest $ECR_REGISTRY/api-gateway-${ENVIRONMENT}:${IMAGE_TAG}
 
-      - name: Push Frontend image
+      # -------------------------
+      # PUSH A ECR
+      # -------------------------
+      - name: Push image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          ECR_REPOSITORY: api-gateway
-          IMAGE_TAG: latest
-        run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        run: docker push $ECR_REGISTRY/api-gateway-${ENVIRONMENT}:${IMAGE_TAG}

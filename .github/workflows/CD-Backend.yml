@@ -58,6 +58,12 @@ jobs:
             sed -i "s|\${ENVIRONMENT}|${ENVIRONMENT}|g" "$file"
           done
 
+      - name: Replace env vars in manifests
+        run: |
+          export AWS_ACCOUNT=${{ secrets.AWS_ACCOUNT_ID }}
+          export ENVIRONMENT=${{ github.ref_name }}
+          envsubst < k8s/inventory-service/deployment.yaml > inventory.yaml
+
       # -----------------------------
       # APPLY MANIFESTS
       # -----------------------------

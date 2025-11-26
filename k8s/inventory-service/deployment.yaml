@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: inventory-service
-          image: ${ECR_REGISTRY}/inventory-service-${ENVIRONMENT}:latest
+          image: ${AWS_ACCOUNT}.dkr.ecr.us-east-1.amazonaws.com/inventory-service-${ENVIRONMENT}:latest
           ports:
             - containerPort: 8002
           env:
@@ -22,5 +22,6 @@ spec:
               value: "postgres://admin:admin123@postgres:5432/microservices_db?sslmode=disable"
             - name: REDIS_URL
               value: "redis:6379"
+
 
 

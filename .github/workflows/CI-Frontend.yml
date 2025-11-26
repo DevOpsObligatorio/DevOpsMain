@@ -1,4 +1,4 @@
-name: CI - Build & Push Frontend to ECR
+name: CI - Build & Push Frontend to ECR 
 
 on:
   push:
@@ -14,7 +14,7 @@ jobs:
 
     env:
       ENVIRONMENT: ${{ github.ref_name }}   # main | dev | test
-      IMAGE_TAG: ${{ github.ref_name }}     # main | dev | test
+      IMAGE_TAG: latest                    
 
     steps:
       # -------------------------
@@ -51,12 +51,12 @@ jobs:
         run: docker build -t api-gateway ./api-gateway
 
       # -------------------------
-      # TAG DINÁMICO USANDO ENVIRONMENT
+      # TAG latest
       # -------------------------
       - name: Tag image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        run: docker tag api-gateway:latest $ECR_REGISTRY/api-gateway-${ENVIRONMENT}:${IMAGE_TAG}
+        run: docker tag api-gateway:latest $ECR_REGISTRY/api-gateway-${ENVIRONMENT}:latest
 
       # -------------------------
       # PUSH A ECR
@@ -64,4 +64,5 @@ jobs:
       - name: Push image
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        run: docker push $ECR_REGISTRY/api-gateway-${ENVIRONMENT}:${IMAGE_TAG}
+        run: docker push $ECR_REGISTRY/api-gateway-${ENVIRONMENT}:latest
+

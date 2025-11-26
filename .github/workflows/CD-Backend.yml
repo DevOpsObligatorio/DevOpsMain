@@ -55,17 +55,17 @@ jobs:
           kubectl apply -n microservices -f k8s/inventory-service
           kubectl apply -n microservices -f k8s/product-service
 
-      # ------------------------
-      # NOTIFICACIÓN CON LAMBDA
-      # ------------------------
-      - name: Crear payload
+      #------------------------
+      #NOTIFICACIÓN CON LAMBDA
+      #------------------------
+      - name: Crear payload válido
         run: |
-          echo '{"message": "El pipeline termino con exito"}' | jq -c . > payload.json
-
+          # Usar jq para generar JSON válido sin BOM
+          jq -n --arg msg "El pipeline terminó con éxito" '{"message": $msg}' > payload.json# Verificar el contenido
+          cat payload.json
+      
       - name: Notificar Lambda
         run: |
-          aws lambda invoke \
-          --function-name pipeline-notify-default \
-          --invocation-type RequestResponse \
-          --payload file://payload.json \
-          response.json
+          aws lambda invoke \--function-name pipeline-notify-default \--invocation-type RequestResponse \--payload fileb://payload.json \--cli-binary-format raw-in-base64-out \
+          response.json && \
+          cat response.json

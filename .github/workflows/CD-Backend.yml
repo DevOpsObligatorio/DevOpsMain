@@ -63,6 +63,12 @@ jobs:
           aws lambda invoke \
           --function-name pipeline-notify-default \
           --invocation-type RequestResponse \
-          --payload '{"message":"El pipeline termino con exito"}' \
+          --payload '{
+            "estado": "éxito",
+            "mensaje": "Despliegue en EKS completado correctamente",
+            "fecha_hora": "'$(date +"%Y-%m-%d %H:%M:%S")'",
+            "flujo_trabajo": "'${{ github.workflow }}'",
+            "repositorio": "'${{ github.repository }}'"
+              }' \
           --cli-binary-format raw-in-base64-out \
           response.json

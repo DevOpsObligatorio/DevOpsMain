@@ -65,7 +65,7 @@ jobs:
       - name: Notificar Lambda
         run: |
           aws lambda invoke \
-          --function-name pipeline-notify-dev \
+          --function-name pipeline-notify-default \
           --invocation-type RequestResponse \
           --payload file://payload.json \
           response.json

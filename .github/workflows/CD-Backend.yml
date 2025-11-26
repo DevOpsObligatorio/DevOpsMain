@@ -85,5 +85,3 @@ jobs:
             --payload '{"message":"Pipeline finalizado con éxito"}' \
             --cli-binary-format raw-in-base64-out \
             response.json
-
-

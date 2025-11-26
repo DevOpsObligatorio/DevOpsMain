@@ -12,7 +12,9 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
-
+      # ------------------------
+      # CHECKOUT DEL REPO
+      # ------------------------
       - name: Checkout repo
         uses: actions/checkout@v4
 
@@ -44,11 +46,24 @@ jobs:
           kubectl get ns microservices || kubectl create ns microservices
 
       # ------------------------
-      # APLICAR SOLO MANIFIESTOS NECESARIOS
+      # APLICAR MANIFIESTOS NECESARIOS
       # ------------------------
       - name: Apply specific manifests
         run: |   
           kubectl apply -n microservices -f k8s/redis
           kubectl apply -n microservices -f k8s/postgres
           kubectl apply -n microservices -f k8s/inventory-service
-          kubectl apply -n microservices -f k8s/product-service 
+          kubectl apply -n microservices -f k8s/product-service
+
+      # ------------------------
+      # NOTIFICACIÓN CON LAMBDA
+      # ------------------------
+      - name: Notify via Lambda
+        uses: aws-actions/aws-lambda-invoke@v1
+        with:
+          function-name: pipeline-notify-dev
+          payload: |
+            {
+              "message": "🚀 El pipeline terminó con éxito"
+            }
+

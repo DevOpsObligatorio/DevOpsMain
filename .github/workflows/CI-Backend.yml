@@ -1,4 +1,4 @@
-name: CI - Build, Test & Push Product & Inventory to ECR
+name: CI - Build & Push Backend to ECR
 
 on:
   push:

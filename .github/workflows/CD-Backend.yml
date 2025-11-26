@@ -63,9 +63,7 @@ jobs:
           aws lambda invoke \
           --function-name pipeline-notify-default \
           --invocation-type RequestResponse \
-          --payload "{\"status\":\"success\",\"message\":\"Deployment completed\",\"timestamp\":\"$(date -u +"%Y-%m-%dT%H:%M:%SZ")\",\"workflow\":\"${{ github.workflow }}\",\"repository\":\"${{ github.repository }}\"}" \
+          --payload '{"message":"El pipeline termino con exito"}' \
           --cli-binary-format raw-in-base64-out \
           response.json
-              }' \
-          --cli-binary-format raw-in-base64-out \
-          response.json
+          

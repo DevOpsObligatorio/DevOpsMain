@@ -82,6 +82,6 @@ jobs:
           aws lambda invoke \
             --function-name ${{ steps.names.outputs.lambda_name }} \
             --invocation-type RequestResponse \
-            --payload "{\"message\":\"Pipeline finalizado con Ã©xito en ${ENVIRONMENT}\"}" \
+            --payload "{\"message\":\"Pipeline finalizado con éxito en ${ENVIRONMENT}\"}" \
             --cli-binary-format raw-in-base64-out \
             response.json

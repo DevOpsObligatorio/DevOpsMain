@@ -42,8 +42,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=DevOpsMain \
-            -Dsonar.organization=DevOpsObligatorio \
+            -Dsonar.projectKey=DevOpsObligatorio_DevOpsMain \
+            -Dsonar.organization=devopsobligatorio \
             -Dsonar.sources=. \
             -Dsonar.go.coverage.reportPaths=coverage.out \
             -Dsonar.host.url=https://sonarcloud.io \

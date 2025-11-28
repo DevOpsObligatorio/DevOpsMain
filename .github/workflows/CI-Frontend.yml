@@ -39,7 +39,6 @@ jobs:
       - name: Run SonarCloud Scan (Frontend)
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sonar-scanner \
             sonar-scanner \

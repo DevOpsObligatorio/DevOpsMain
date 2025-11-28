@@ -42,7 +42,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=DevOpsObligatorio_DevOpsFront \
+            -Dsonar.projectKey=DevOpsObligatorio_DevOpsMain \
             -Dsonar.organization=DevOpsObligatorio \
             -Dsonar.sources=. \
             -Dsonar.go.coverage.reportPaths=coverage.out \

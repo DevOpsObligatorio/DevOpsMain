@@ -32,20 +32,24 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-
+      
       - name: Install sonar-scanner
         run: npm install -g sonar-scanner
-
+      
       - name: Run SonarCloud Scan (Frontend)
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sonar-scanner \
             -Dsonar.projectKey=frontend_${{ env.ENVIRONMENT }} \
             -Dsonar.organization=tu_org \
-            -Dsonar.sources=./api-gateway/src \
+            -Dsonar.host.url=https://sonarcloud.io \
+            -Dsonar.sources=api-gateway/src \
             -Dsonar.qualitygate.wait=true \
             -Dsonar.sourceEncoding=UTF-8
+
+
 
       # AWS LOGIN
       - name: Configure AWS Credentials

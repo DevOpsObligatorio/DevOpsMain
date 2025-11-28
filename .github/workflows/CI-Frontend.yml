@@ -42,12 +42,12 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           sonar-scanner \
-            -Dsonar.projectKey=frontend_${{ env.ENVIRONMENT }} \
+            sonar-scanner \
+            -Dsonar.projectKey=DevOpsFront \
             -Dsonar.organization=DevOpsObligatorio \
-            -Dsonar.host.url=https://sonarcloud.io \
-            -Dsonar.sources=api-gateway \
-            -Dsonar.qualitygate.wait=true \
-            -Dsonar.sourceEncoding=UTF-8
+            -Dsonar.sources=src \
+            -Dsonar.host.url=https://sonarcloud.io/ \
+            -Dsonar.qualitygate.wait=true
 
 
 

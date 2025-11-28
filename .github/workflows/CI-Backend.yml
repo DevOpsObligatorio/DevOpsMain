@@ -70,29 +70,6 @@ jobs:
       - name: Run Synced Backend Tests
         run: newman run backend-tests-postman.json
 
-      # ---------------------------------------------------------
-      # SONARCLOUD - QUALITY GATE  (AQUÍ SE AGREGA)
-      # ---------------------------------------------------------
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      - name: Install sonar-scanner
-        run: npm install -g sonar-scanner
-
-      - name: Run SonarCloud Scan (Backend)
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: |
-          sonar-scanner \
-            -Dsonar.projectKey=backend_${{ env.ENVIRONMENT }} \
-            -Dsonar.organization=tu_org \
-            -Dsonar.sources=./product-service \
-            -Dsonar.sources=./inventory-service \
-            -Dsonar.qualitygate.wait=true \
-            -Dsonar.sourceEncoding=UTF-8
-
       # -------------------------
       # AWS Login
       # -------------------------

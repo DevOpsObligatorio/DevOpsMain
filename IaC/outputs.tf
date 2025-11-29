@@ -22,3 +22,18 @@ output "ecr_repositories_urls" {
   }
 }
 
+output "eks_dashboard_name" {
+  description = "Nombre del dashboard de métricas EKS"
+  value       = aws_cloudwatch_dashboard.eks_dashboard.dashboard_name
+}
+
+output "eks_high_cpu_alarm_name" {
+  description = "Nombre de la alarma de CPU alta"
+  value       = aws_cloudwatch_metric_alarm.eks_high_cpu.alarm_name
+}
+
+
+output "eks_high_memory_alarm_name" {
+  description = "Nombre de la alarma de memoria alta"
+  value       = aws_cloudwatch_metric_alarm.eks_high_memory.alarm_name
+}

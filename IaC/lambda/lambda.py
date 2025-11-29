@@ -3,43 +3,55 @@ import urllib.request
 import urllib.error
 import os
 
-def lambda_handler(event, context):
-    try:
-        WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
+WEBHOOK_URL = os.environ["DISCORD_WEBHOOK_URL"]
 
-        message = event.get("message", "Pipeline finalizado")
-        payload = {
-            "content": f"📢 {message}"
-        }
-
-        data = json.dumps(payload).encode("utf-8")
-        headers = {
+def send(msg):
+    payload = { "content": msg }
+    req = urllib.request.Request(
+        WEBHOOK_URL,
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
             "Content-Type": "application/json",
             "User-Agent": "AWSLambda"
-        }
+        },
+        method="POST"
+    )
+    urllib.request.urlopen(req)
 
-        req = urllib.request.Request(
-            WEBHOOK_URL,
-            data=data,
-            headers=headers,
-            method="POST"
-        )
 
-        with urllib.request.urlopen(req) as response:
-            print("Status:", response.getcode())
-            return {
-                "statusCode": 200,
-                "body": json.dumps({"status": "ok"})
-            }
+def lambda_handler(event, context):
+    print("EVENT:", event)
 
-    except urllib.error.HTTPError as e:
-        return {
-            "statusCode": e.code,
-            "body": json.dumps({"status": "error", "error": f"HTTP Error {e.code}: {e.reason}"})
-        }
-    except Exception as e:
-        return {
-            "statusCode": 500,
-            "body": json.dumps({"status": "error", "error": str(e)})
-        }
+    # --------------------------
+    # 1️⃣ MENSAJE DEL PIPELINE
+    # --------------------------
+    if "message" in event:
+        send(f"📢 {event['message']}")
+        return {"statusCode": 200}
 
+    # --------------------------
+    # 2️⃣ EVENTO SNS (ALARMAS)
+    # --------------------------
+    if "Records" in event:
+        sns_msg = event["Records"][0]["Sns"]["Message"]
+        msg_text = sns_msg.lower()
+
+        # CPU
+        if "cpu" in msg_text:
+            send("🚨 ALERTA DE CPU ALTA — EKS Cluster")
+            return {"statusCode": 200}
+
+        # MEMORIA
+        if "memory" in msg_text or "mem" in msg_text:
+            send("🚨 ALERTA DE MEMORIA ALTA — EKS Cluster")
+            return {"statusCode": 200}
+
+        # Si no es CPU ni memoria, ignorar
+        print("SNS recibido pero no es CPU ni MEMORIA")
+        return {"statusCode": 200}
+
+    # --------------------------
+    # 3️⃣ OTROS EVENTOS
+    # --------------------------
+    send("Evento recibido sin mensaje conocido")
+    return {"statusCode": 200}

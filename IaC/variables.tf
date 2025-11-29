@@ -5,6 +5,7 @@ variable "discord_webhook_url" {
 }
 
 
+
 variable "role_arn" {
   description = "ARN del rol IAM existente para el clúster EKS"
   type        = string

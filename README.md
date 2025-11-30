@@ -99,6 +99,7 @@ Mediante el uso de terraform.workspace, se logró que la misma configuración de
 Con este enfoque, cada entorno cuenta con su propio conjunto aislado de recursos (EKS, dashboards, alertas, Lambda, etc.), permitiendo realizar pruebas y despliegues de manera independiente sin afectar a los demás ambientes.
 
 Pruebas:
+
 ![](Imagenes/image13.png)
 
 5. Control de Versiones

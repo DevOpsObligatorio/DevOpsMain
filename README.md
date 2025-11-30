@@ -1,503 +1,221 @@
-<span class="c8 c18">Obligatorio DevOps</span>
+.lst-kix\_6wlimscte0fr-3>li:before{content:"\0025cf "}.lst-kix\_6wlimscte0fr-4>li:before{content:"\0025cb "}ol.lst-kix\_xh1ti52wb4sb-8.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-8 0}.lst-kix\_6wlimscte0fr-1>li:before{content:"\0025cb "}.lst-kix\_6wlimscte0fr-2>li:before{content:"\0025a0 "}.lst-kix\_6wlimscte0fr-5>li:before{content:"\0025a0 "}.lst-kix\_6wlimscte0fr-6>li:before{content:"\0025cf "}.lst-kix\_6wlimscte0fr-0>li:before{content:"\0025cf "}.lst-kix\_6wlimscte0fr-7>li:before{content:"\0025cb "}.lst-kix\_6wlimscte0fr-8>li:before{content:"\0025a0 "}ol.lst-kix\_pcmnkpfud7hh-2.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-2 0}.lst-kix\_xh1ti52wb4sb-8>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-8,lower-roman) ". "}.lst-kix\_t9pdpmy4gj09-0>li:before{content:"\0025cf "}ul.lst-kix\_3v9gcbmp8d9q-1{list-style-type:none}.lst-kix\_swcy3dn39rny-6>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-6}ul.lst-kix\_3v9gcbmp8d9q-0{list-style-type:none}.lst-kix\_xh1ti52wb4sb-7>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-7,lower-latin) ". "}ol.lst-kix\_3o3bwk15j6n3-4.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-4 0}ul.lst-kix\_3v9gcbmp8d9q-7{list-style-type:none}ul.lst-kix\_3v9gcbmp8d9q-6{list-style-type:none}.lst-kix\_xh1ti52wb4sb-4>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-4,lower-latin) ". "}.lst-kix\_xh1ti52wb4sb-5>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-5,lower-roman) ". "}ul.lst-kix\_3v9gcbmp8d9q-8{list-style-type:none}ul.lst-kix\_3v9gcbmp8d9q-3{list-style-type:none}ul.lst-kix\_3v9gcbmp8d9q-2{list-style-type:none}.lst-kix\_xh1ti52wb4sb-6>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-6,decimal) ". "}ul.lst-kix\_3v9gcbmp8d9q-5{list-style-type:none}ul.lst-kix\_3v9gcbmp8d9q-4{list-style-type:none}.lst-kix\_pcmnkpfud7hh-8>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-8}ul.lst-kix\_8xwfcwiktipu-1{list-style-type:none}ul.lst-kix\_8xwfcwiktipu-0{list-style-type:none}.lst-kix\_8xwfcwiktipu-1>li:before{content:"\0025cb "}.lst-kix\_8xwfcwiktipu-2>li:before{content:"\0025a0 "}ul.lst-kix\_xe83hzmhcex-2{list-style-type:none}ul.lst-kix\_xe83hzmhcex-3{list-style-type:none}ul.lst-kix\_xe83hzmhcex-0{list-style-type:none}ul.lst-kix\_xe83hzmhcex-1{list-style-type:none}.lst-kix\_8xwfcwiktipu-3>li:before{content:"\0025cf "}.lst-kix\_8xwfcwiktipu-5>li:before{content:"\0025a0 "}ul.lst-kix\_xe83hzmhcex-6{list-style-type:none}ul.lst-kix\_xe83hzmhcex-7{list-style-type:none}ul.lst-kix\_xe83hzmhcex-4{list-style-type:none}ul.lst-kix\_xe83hzmhcex-5{list-style-type:none}.lst-kix\_8xwfcwiktipu-4>li:before{content:"\0025cb "}ul.lst-kix\_xe83hzmhcex-8{list-style-type:none}ul.lst-kix\_a896hw6xeyrs-6{list-style-type:none}ul.lst-kix\_a896hw6xeyrs-5{list-style-type:none}.lst-kix\_xh1ti52wb4sb-0>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-0}ul.lst-kix\_a896hw6xeyrs-4{list-style-type:none}ul.lst-kix\_a896hw6xeyrs-3{list-style-type:none}ul.lst-kix\_a896hw6xeyrs-2{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-8.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-8 0}ul.lst-kix\_a896hw6xeyrs-1{list-style-type:none}ul.lst-kix\_a896hw6xeyrs-0{list-style-type:none}ol.lst-kix\_swcy3dn39rny-4.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-4 0}.lst-kix\_8xwfcwiktipu-0>li:before{content:"\0025cf "}ul.lst-kix\_wg7al02e5jvq-1{list-style-type:none}ul.lst-kix\_wg7al02e5jvq-0{list-style-type:none}ul.lst-kix\_wg7al02e5jvq-3{list-style-type:none}ul.lst-kix\_wg7al02e5jvq-2{list-style-type:none}ul.lst-kix\_wg7al02e5jvq-5{list-style-type:none}ul.lst-kix\_wg7al02e5jvq-4{list-style-type:none}.lst-kix\_3v9gcbmp8d9q-1>li:before{content:"\0025cb "}ul.lst-kix\_wg7al02e5jvq-7{list-style-type:none}ul.lst-kix\_wg7al02e5jvq-6{list-style-type:none}.lst-kix\_swcy3dn39rny-8>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-8}ul.lst-kix\_wg7al02e5jvq-8{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-7.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-7 0}.lst-kix\_3v9gcbmp8d9q-0>li:before{content:"\0025cf "}ol.lst-kix\_xh1ti52wb4sb-3.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-3 0}.lst-kix\_3v9gcbmp8d9q-6>li:before{content:"\0025cf "}.lst-kix\_3v9gcbmp8d9q-7>li:before{content:"\0025cb "}.lst-kix\_8xwfcwiktipu-7>li:before{content:"\0025cb "}.lst-kix\_3v9gcbmp8d9q-5>li:before{content:"\0025a0 "}.lst-kix\_8xwfcwiktipu-6>li:before{content:"\0025cf "}.lst-kix\_3v9gcbmp8d9q-2>li:before{content:"\0025a0 "}.lst-kix\_3v9gcbmp8d9q-3>li:before{content:"\0025cf "}.lst-kix\_pcmnkpfud7hh-1>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-1}.lst-kix\_swcy3dn39rny-2>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-2}.lst-kix\_3v9gcbmp8d9q-4>li:before{content:"\0025cb "}.lst-kix\_3o3bwk15j6n3-2>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-2}.lst-kix\_8xwfcwiktipu-8>li:before{content:"\0025a0 "}.lst-kix\_x2k0941u15xq-5>li:before{content:"\0025a0 "}.lst-kix\_xh1ti52wb4sb-0>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-0,decimal) ". "}.lst-kix\_xh1ti52wb4sb-1>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-1,lower-latin) ". "}.lst-kix\_x2k0941u15xq-4>li:before{content:"\0025cb "}.lst-kix\_x2k0941u15xq-6>li:before{content:"\0025cf "}.lst-kix\_xh1ti52wb4sb-2>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-2}.lst-kix\_x2k0941u15xq-3>li:before{content:"\0025cf "}.lst-kix\_x2k0941u15xq-7>li:before{content:"\0025cb "}.lst-kix\_xh1ti52wb4sb-3>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-3,decimal) ". "}ol.lst-kix\_swcy3dn39rny-5.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-5 0}ol.lst-kix\_xh1ti52wb4sb-2.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-2 0}.lst-kix\_x2k0941u15xq-1>li:before{content:"\0025cb "}ul.lst-kix\_3o3bwk15j6n3-1{list-style-type:none}.lst-kix\_x2k0941u15xq-0>li:before{content:"\0025cf "}.lst-kix\_x2k0941u15xq-2>li:before{content:"\0025a0 "}.lst-kix\_x2k0941u15xq-8>li:before{content:"\0025a0 "}.lst-kix\_xh1ti52wb4sb-2>li:before{content:"" counter(lst-ctn-kix\_xh1ti52wb4sb-2,lower-roman) ". "}ol.lst-kix\_3o3bwk15j6n3-3.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-3 0}.lst-kix\_xh1ti52wb4sb-6>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-6}.lst-kix\_pcmnkpfud7hh-2>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-2,lower-roman) ". "}.lst-kix\_pcmnkpfud7hh-6>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-6,decimal) ". "}ul.lst-kix\_smbhsro6ionk-8{list-style-type:none}.lst-kix\_z6zhyeh07d1i-7>li:before{content:"\0025cb "}.lst-kix\_pcmnkpfud7hh-0>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-0,decimal) ". "}.lst-kix\_pcmnkpfud7hh-8>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-8,lower-roman) ". "}ul.lst-kix\_smbhsro6ionk-4{list-style-type:none}ul.lst-kix\_smbhsro6ionk-5{list-style-type:none}ul.lst-kix\_smbhsro6ionk-6{list-style-type:none}ul.lst-kix\_smbhsro6ionk-7{list-style-type:none}ul.lst-kix\_smbhsro6ionk-0{list-style-type:none}ul.lst-kix\_smbhsro6ionk-1{list-style-type:none}ul.lst-kix\_smbhsro6ionk-2{list-style-type:none}.lst-kix\_z6zhyeh07d1i-1>li:before{content:"\0025cb "}.lst-kix\_z6zhyeh07d1i-5>li:before{content:"\0025a0 "}ul.lst-kix\_smbhsro6ionk-3{list-style-type:none}.lst-kix\_pcmnkpfud7hh-4>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-4}.lst-kix\_z6zhyeh07d1i-3>li:before{content:"\0025cf "}ol.lst-kix\_xh1ti52wb4sb-1.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-1 0}.lst-kix\_pcmnkpfud7hh-4>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-4,lower-latin) ". "}ol.lst-kix\_swcy3dn39rny-0.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-0 2}.lst-kix\_m8y3rhnsjd8b-7>li:before{content:"\0025cb "}.lst-kix\_pcmnkpfud7hh-2>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-2}.lst-kix\_3o3bwk15j6n3-4>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-4}.lst-kix\_m8y3rhnsjd8b-5>li:before{content:"\0025a0 "}.lst-kix\_m8y3rhnsjd8b-1>li:before{content:"\0025cb "}.lst-kix\_m8y3rhnsjd8b-3>li:before{content:"\0025cf "}.lst-kix\_a896hw6xeyrs-3>li:before{content:"\0025cf "}.lst-kix\_a896hw6xeyrs-7>li:before{content:"\0025cb "}ul.lst-kix\_a896hw6xeyrs-8{list-style-type:none}.lst-kix\_swcy3dn39rny-1>li:before{content:"\0025cb "}.lst-kix\_swcy3dn39rny-5>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-5,lower-roman) ". "}ul.lst-kix\_a896hw6xeyrs-7{list-style-type:none}.lst-kix\_a896hw6xeyrs-1>li:before{content:"\0025cb "}.lst-kix\_swcy3dn39rny-3>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-3,decimal) ". "}ol.lst-kix\_swcy3dn39rny-3.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-3 0}.lst-kix\_swcy3dn39rny-7>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-7,lower-latin) ". "}.lst-kix\_a896hw6xeyrs-5>li:before{content:"\0025a0 "}.lst-kix\_t9pdpmy4gj09-7>li:before{content:"\0025cb "}.lst-kix\_swcy3dn39rny-4>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-4}.lst-kix\_3o3bwk15j6n3-1>li:before{content:"\0025cb "}.lst-kix\_3o3bwk15j6n3-5>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-5,lower-roman) ". "}.lst-kix\_t9pdpmy4gj09-1>li:before{content:"\0025cb "}ol.lst-kix\_swcy3dn39rny-2.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-2 0}.lst-kix\_3o3bwk15j6n3-3>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-3,decimal) ". "}.lst-kix\_3o3bwk15j6n3-3>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-3}.lst-kix\_xh1ti52wb4sb-7>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-7}.lst-kix\_smbhsro6ionk-8>li:before{content:"\0025a0 "}.lst-kix\_pcmnkpfud7hh-3>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-3}ol.lst-kix\_3o3bwk15j6n3-0.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-0 0}.lst-kix\_t9pdpmy4gj09-3>li:before{content:"\0025cf "}ul.lst-kix\_swcy3dn39rny-1{list-style-type:none}.lst-kix\_t9pdpmy4gj09-5>li:before{content:"\0025a0 "}.lst-kix\_3o3bwk15j6n3-7>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-7,lower-latin) ". "}ul.lst-kix\_t9pdpmy4gj09-4{list-style-type:none}ul.lst-kix\_t9pdpmy4gj09-5{list-style-type:none}ol.lst-kix\_swcy3dn39rny-2{list-style-type:none}.lst-kix\_z28iytg8olu-2>li:before{content:"\0025a0 "}.lst-kix\_z28iytg8olu-3>li:before{content:"\0025cf "}ul.lst-kix\_t9pdpmy4gj09-6{list-style-type:none}ul.lst-kix\_t9pdpmy4gj09-7{list-style-type:none}ol.lst-kix\_swcy3dn39rny-0{list-style-type:none}ul.lst-kix\_t9pdpmy4gj09-8{list-style-type:none}ul.lst-kix\_m8y3rhnsjd8b-5{list-style-type:none}.lst-kix\_z28iytg8olu-0>li:before{content:"\0025cf "}.lst-kix\_z28iytg8olu-1>li:before{content:"\0025cb "}.lst-kix\_z28iytg8olu-4>li:before{content:"\0025cb "}.lst-kix\_z28iytg8olu-5>li:before{content:"\0025a0 "}ul.lst-kix\_m8y3rhnsjd8b-6{list-style-type:none}ul.lst-kix\_m8y3rhnsjd8b-7{list-style-type:none}ul.lst-kix\_m8y3rhnsjd8b-8{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-3{list-style-type:none}ul.lst-kix\_m8y3rhnsjd8b-1{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-2{list-style-type:none}.lst-kix\_z28iytg8olu-6>li:before{content:"\0025cf "}.lst-kix\_z28iytg8olu-7>li:before{content:"\0025cb "}ul.lst-kix\_m8y3rhnsjd8b-2{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-5{list-style-type:none}ul.lst-kix\_m8y3rhnsjd8b-3{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-4{list-style-type:none}ol.lst-kix\_3o3bwk15j6n3-7.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-7 0}ul.lst-kix\_m8y3rhnsjd8b-4{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-7{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-6{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-8{list-style-type:none}ul.lst-kix\_m8y3rhnsjd8b-0{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-6{list-style-type:none}.lst-kix\_xh1ti52wb4sb-1>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-1}ol.lst-kix\_pcmnkpfud7hh-7{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-4{list-style-type:none}.lst-kix\_smbhsro6ionk-6>li:before{content:"\0025cf "}ol.lst-kix\_pcmnkpfud7hh-5{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-8{list-style-type:none}.lst-kix\_smbhsro6ionk-5>li:before{content:"\0025a0 "}.lst-kix\_swcy3dn39rny-5>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-5}ol.lst-kix\_swcy3dn39rny-7{list-style-type:none}.lst-kix\_smbhsro6ionk-2>li:before{content:"\0025a0 "}.lst-kix\_smbhsro6ionk-4>li:before{content:"\0025cb "}ol.lst-kix\_swcy3dn39rny-8{list-style-type:none}ol.lst-kix\_swcy3dn39rny-5{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-2{list-style-type:none}ol.lst-kix\_swcy3dn39rny-6{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-3{list-style-type:none}ol.lst-kix\_swcy3dn39rny-3{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-0{list-style-type:none}.lst-kix\_smbhsro6ionk-3>li:before{content:"\0025cf "}ol.lst-kix\_swcy3dn39rny-4{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-1{list-style-type:none}.lst-kix\_smbhsro6ionk-0>li:before{content:"\0025cf "}ul.lst-kix\_6wlimscte0fr-0{list-style-type:none}ol.lst-kix\_swcy3dn39rny-7.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-7 0}ul.lst-kix\_6wlimscte0fr-1{list-style-type:none}ul.lst-kix\_6wlimscte0fr-2{list-style-type:none}ul.lst-kix\_89agnsf36ti-7{list-style-type:none}ul.lst-kix\_6wlimscte0fr-3{list-style-type:none}.lst-kix\_smbhsro6ionk-1>li:before{content:"\0025cb "}ul.lst-kix\_89agnsf36ti-8{list-style-type:none}ul.lst-kix\_6wlimscte0fr-4{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-5.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-5 0}ol.lst-kix\_xh1ti52wb4sb-0.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-0 0}.lst-kix\_z28iytg8olu-8>li:before{content:"\0025a0 "}.lst-kix\_89agnsf36ti-3>li:before{content:"\0025cf "}.lst-kix\_89agnsf36ti-2>li:before{content:"\0025a0 "}ul.lst-kix\_6wlimscte0fr-5{list-style-type:none}ul.lst-kix\_6wlimscte0fr-6{list-style-type:none}.lst-kix\_xh1ti52wb4sb-3>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-3}ul.lst-kix\_6wlimscte0fr-7{list-style-type:none}ul.lst-kix\_6wlimscte0fr-8{list-style-type:none}ul.lst-kix\_t9pdpmy4gj09-0{list-style-type:none}.lst-kix\_89agnsf36ti-0>li:before{content:"\0025cf "}ul.lst-kix\_t9pdpmy4gj09-1{list-style-type:none}ul.lst-kix\_t9pdpmy4gj09-2{list-style-type:none}.lst-kix\_89agnsf36ti-1>li:before{content:"\0025cb "}ul.lst-kix\_t9pdpmy4gj09-3{list-style-type:none}ol.lst-kix\_3o3bwk15j6n3-2.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-2 0}ol.lst-kix\_swcy3dn39rny-6.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-6 0}.lst-kix\_3o3bwk15j6n3-8>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-8}ol.lst-kix\_3o3bwk15j6n3-8{list-style-type:none}ol.lst-kix\_3o3bwk15j6n3-7{list-style-type:none}ol.lst-kix\_3o3bwk15j6n3-4{list-style-type:none}.lst-kix\_89agnsf36ti-4>li:before{content:"\0025cb "}ol.lst-kix\_3o3bwk15j6n3-3{list-style-type:none}ol.lst-kix\_3o3bwk15j6n3-6{list-style-type:none}.lst-kix\_89agnsf36ti-5>li:before{content:"\0025a0 "}.lst-kix\_swcy3dn39rny-3>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-3}ol.lst-kix\_3o3bwk15j6n3-5{list-style-type:none}.lst-kix\_xe83hzmhcex-0>li:before{content:"- "}ol.lst-kix\_3o3bwk15j6n3-0{list-style-type:none}.lst-kix\_89agnsf36ti-6>li:before{content:"\0025cf "}.lst-kix\_xe83hzmhcex-1>li:before{content:"- "}ol.lst-kix\_3o3bwk15j6n3-2{list-style-type:none}.lst-kix\_89agnsf36ti-7>li:before{content:"\0025cb "}.lst-kix\_pcmnkpfud7hh-7>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-7}.lst-kix\_xh1ti52wb4sb-8>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-8}ul.lst-kix\_x2k0941u15xq-1{list-style-type:none}ul.lst-kix\_x2k0941u15xq-0{list-style-type:none}.lst-kix\_89agnsf36ti-8>li:before{content:"\0025a0 "}ul.lst-kix\_x2k0941u15xq-5{list-style-type:none}ul.lst-kix\_x2k0941u15xq-4{list-style-type:none}ul.lst-kix\_x2k0941u15xq-3{list-style-type:none}ul.lst-kix\_x2k0941u15xq-2{list-style-type:none}.lst-kix\_xe83hzmhcex-8>li:before{content:"- "}.lst-kix\_wg7al02e5jvq-8>li:before{content:"\0025a0 "}ul.lst-kix\_x2k0941u15xq-8{list-style-type:none}.lst-kix\_xe83hzmhcex-7>li:before{content:"- "}ul.lst-kix\_x2k0941u15xq-7{list-style-type:none}ul.lst-kix\_x2k0941u15xq-6{list-style-type:none}.lst-kix\_wg7al02e5jvq-6>li:before{content:"\0025cf "}.lst-kix\_xe83hzmhcex-4>li:before{content:"- "}ul.lst-kix\_z28iytg8olu-2{list-style-type:none}ul.lst-kix\_z28iytg8olu-3{list-style-type:none}.lst-kix\_xe83hzmhcex-3>li:before{content:"- "}ul.lst-kix\_z28iytg8olu-4{list-style-type:none}ul.lst-kix\_z28iytg8olu-5{list-style-type:none}.lst-kix\_xe83hzmhcex-2>li:before{content:"- "}.lst-kix\_wg7al02e5jvq-7>li:before{content:"\0025cb "}ul.lst-kix\_z28iytg8olu-0{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-6.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-6 0}ul.lst-kix\_z28iytg8olu-1{list-style-type:none}ul.lst-kix\_z6zhyeh07d1i-4{list-style-type:none}ul.lst-kix\_z6zhyeh07d1i-5{list-style-type:none}.lst-kix\_wg7al02e5jvq-0>li:before{content:"\0025cf "}.lst-kix\_wg7al02e5jvq-1>li:before{content:"\0025cb "}ul.lst-kix\_z6zhyeh07d1i-2{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-0.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-0 0}ul.lst-kix\_z6zhyeh07d1i-3{list-style-type:none}ul.lst-kix\_z6zhyeh07d1i-0{list-style-type:none}ul.lst-kix\_z28iytg8olu-6{list-style-type:none}ul.lst-kix\_z6zhyeh07d1i-1{list-style-type:none}.lst-kix\_wg7al02e5jvq-2>li:before{content:"\0025a0 "}ul.lst-kix\_z28iytg8olu-7{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-1{list-style-type:none}ul.lst-kix\_z28iytg8olu-8{list-style-type:none}ol.lst-kix\_xh1ti52wb4sb-0{list-style-type:none}.lst-kix\_wg7al02e5jvq-4>li:before{content:"\0025cb "}.lst-kix\_wg7al02e5jvq-5>li:before{content:"\0025a0 "}.lst-kix\_xe83hzmhcex-5>li:before{content:"- "}ul.lst-kix\_z6zhyeh07d1i-8{list-style-type:none}.lst-kix\_xe83hzmhcex-6>li:before{content:"- "}.lst-kix\_wg7al02e5jvq-3>li:before{content:"\0025cf "}ul.lst-kix\_z6zhyeh07d1i-6{list-style-type:none}ul.lst-kix\_z6zhyeh07d1i-7{list-style-type:none}.lst-kix\_pcmnkpfud7hh-3>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-3,decimal) ". "}.lst-kix\_pcmnkpfud7hh-5>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-5,lower-roman) ". "}.lst-kix\_z6zhyeh07d1i-6>li:before{content:"\0025cf "}.lst-kix\_swcy3dn39rny-0>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-0}.lst-kix\_pcmnkpfud7hh-1>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-1,lower-latin) ". "}.lst-kix\_pcmnkpfud7hh-7>li:before{content:"" counter(lst-ctn-kix\_pcmnkpfud7hh-7,lower-latin) ". "}.lst-kix\_z6zhyeh07d1i-8>li:before{content:"\0025a0 "}.lst-kix\_z6zhyeh07d1i-2>li:before{content:"\0025a0 "}ol.lst-kix\_xh1ti52wb4sb-4.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-4 0}ol.lst-kix\_swcy3dn39rny-8.start{counter-reset:lst-ctn-kix\_swcy3dn39rny-8 0}.lst-kix\_xh1ti52wb4sb-5>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-5}.lst-kix\_3o3bwk15j6n3-0>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-0,decimal) ". "}.lst-kix\_z6zhyeh07d1i-4>li:before{content:"\0025cb "}.lst-kix\_3o3bwk15j6n3-5>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-5}ol.lst-kix\_3o3bwk15j6n3-8.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-8 0}.lst-kix\_pcmnkpfud7hh-5>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-5}.lst-kix\_m8y3rhnsjd8b-8>li:before{content:"\0025a0 "}ol.lst-kix\_pcmnkpfud7hh-1.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-1 0}ol.lst-kix\_xh1ti52wb4sb-7.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-7 0}.lst-kix\_3v9gcbmp8d9q-8>li:before{content:"\0025a0 "}.lst-kix\_m8y3rhnsjd8b-6>li:before{content:"\0025cf "}ol.lst-kix\_3o3bwk15j6n3-5.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-5 0}.lst-kix\_m8y3rhnsjd8b-0>li:before{content:"\0025cf "}.lst-kix\_m8y3rhnsjd8b-4>li:before{content:"\0025cb "}.lst-kix\_swcy3dn39rny-0>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-0,decimal) ". "}.lst-kix\_3o3bwk15j6n3-7>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-7}.lst-kix\_m8y3rhnsjd8b-2>li:before{content:"\0025a0 "}.lst-kix\_a896hw6xeyrs-4>li:before{content:"\0025cb "}.lst-kix\_swcy3dn39rny-2>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-2,lower-roman) ". "}.lst-kix\_swcy3dn39rny-4>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-4,lower-latin) ". "}.lst-kix\_a896hw6xeyrs-2>li:before{content:"\0025a0 "}.lst-kix\_a896hw6xeyrs-6>li:before{content:"\0025cf "}.lst-kix\_a896hw6xeyrs-0>li:before{content:"\0025cf "}.lst-kix\_a896hw6xeyrs-8>li:before{content:"\0025a0 "}.lst-kix\_xh1ti52wb4sb-4>li{counter-increment:lst-ctn-kix\_xh1ti52wb4sb-4}.lst-kix\_swcy3dn39rny-8>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-8,lower-roman) ". "}ol.lst-kix\_xh1ti52wb4sb-6.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-6 0}ul.lst-kix\_8xwfcwiktipu-7{list-style-type:none}ul.lst-kix\_89agnsf36ti-5{list-style-type:none}ul.lst-kix\_8xwfcwiktipu-6{list-style-type:none}ul.lst-kix\_89agnsf36ti-6{list-style-type:none}ul.lst-kix\_89agnsf36ti-3{list-style-type:none}.lst-kix\_swcy3dn39rny-6>li:before{content:"" counter(lst-ctn-kix\_swcy3dn39rny-6,decimal) ". "}ul.lst-kix\_8xwfcwiktipu-8{list-style-type:none}ol.lst-kix\_3o3bwk15j6n3-6.start{counter-reset:lst-ctn-kix\_3o3bwk15j6n3-6 0}ul.lst-kix\_89agnsf36ti-4{list-style-type:none}ul.lst-kix\_8xwfcwiktipu-3{list-style-type:none}ul.lst-kix\_89agnsf36ti-1{list-style-type:none}ul.lst-kix\_8xwfcwiktipu-2{list-style-type:none}ul.lst-kix\_89agnsf36ti-2{list-style-type:none}ul.lst-kix\_8xwfcwiktipu-5{list-style-type:none}ul.lst-kix\_8xwfcwiktipu-4{list-style-type:none}ul.lst-kix\_89agnsf36ti-0{list-style-type:none}ol.lst-kix\_pcmnkpfud7hh-4.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-4 0}.lst-kix\_t9pdpmy4gj09-6>li:before{content:"\0025cf "}.lst-kix\_t9pdpmy4gj09-8>li:before{content:"\0025a0 "}.lst-kix\_3o3bwk15j6n3-2>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-2,lower-roman) ". "}.lst-kix\_3o3bwk15j6n3-4>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-4,lower-latin) ". "}ol.lst-kix\_pcmnkpfud7hh-3.start{counter-reset:lst-ctn-kix\_pcmnkpfud7hh-3 0}.lst-kix\_t9pdpmy4gj09-2>li:before{content:"\0025a0 "}.lst-kix\_z6zhyeh07d1i-0>li:before{content:"\0025cf "}li.li-bullet-0:before{margin-left:-18pt;white-space:nowrap;display:inline-block;min-width:18pt}.lst-kix\_3o3bwk15j6n3-6>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-6}.lst-kix\_smbhsro6ionk-7>li:before{content:"\0025cb "}ol.lst-kix\_xh1ti52wb4sb-5.start{counter-reset:lst-ctn-kix\_xh1ti52wb4sb-5 0}.lst-kix\_pcmnkpfud7hh-0>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-0}.lst-kix\_pcmnkpfud7hh-6>li{counter-increment:lst-ctn-kix\_pcmnkpfud7hh-6}.lst-kix\_3o3bwk15j6n3-0>li{counter-increment:lst-ctn-kix\_3o3bwk15j6n3-0}.lst-kix\_t9pdpmy4gj09-4>li:before{content:"\0025cb "}.lst-kix\_3o3bwk15j6n3-6>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-6,decimal) ". "}.lst-kix\_3o3bwk15j6n3-8>li:before{content:"" counter(lst-ctn-kix\_3o3bwk15j6n3-8,lower-roman) ". "}.lst-kix\_swcy3dn39rny-7>li{counter-increment:lst-ctn-kix\_swcy3dn39rny-7}ol{margin:0;padding:0}table td,table th{padding:0}.c0{margin-left:36pt;padding-top:12pt;padding-left:0pt;padding-bottom:12pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c5{color:#000000;font-weight:400;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Arial";font-style:normal}.c1{color:#000000;font-weight:700;text-decoration:none;vertical-align:baseline;font-size:12pt;font-family:"Arial";font-style:normal}.c13{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:center;height:11pt}.c2{padding-top:12pt;padding-bottom:12pt;line-height:1.15;orphans:2;widows:2;text-align:left;height:11pt}.c19{padding-top:14pt;padding-bottom:4pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c12{color:#000000;text-decoration:none;vertical-align:baseline;font-size:13pt;font-family:"Arial";font-style:normal}.c20{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:center}.c17{color:#000000;text-decoration:none;vertical-align:baseline;font-size:14pt;font-family:"Arial";font-style:normal}.c16{padding-top:12pt;padding-bottom:2pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c15{padding-top:0pt;padding-bottom:0pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c18{color:#000000;text-decoration:none;vertical-align:baseline;font-size:17pt;font-family:"Arial";font-style:normal}.c11{color:#000000;text-decoration:none;vertical-align:baseline;font-size:11pt;font-family:"Arial";font-style:normal}.c3{padding-top:12pt;padding-bottom:12pt;line-height:1.15;orphans:2;widows:2;text-align:left}.c22{background-color:#ffffff;max-width:451.4pt;padding:72pt 72pt 72pt 72pt}.c7{padding:0;margin:0}.c10{font-style:italic}.c21{height:11pt}.c8{font-weight:700}.c4{margin-left:72pt}.c14{font-weight:400}.c6{padding-left:0pt}.c9{font-size:12pt}.c23{margin-left:36pt}.title{padding-top:0pt;color:#000000;font-size:26pt;padding-bottom:3pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}.subtitle{padding-top:0pt;color:#666666;font-size:15pt;padding-bottom:16pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}li{color:#000000;font-size:11pt;font-family:"Arial"}p{margin:0;color:#000000;font-size:11pt;font-family:"Arial"}h1{padding-top:20pt;color:#000000;font-size:20pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h2{padding-top:18pt;color:#000000;font-size:16pt;padding-bottom:6pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h3{padding-top:16pt;color:#434343;font-size:14pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h4{padding-top:14pt;color:#666666;font-size:12pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h5{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;orphans:2;widows:2;text-align:left}h6{padding-top:12pt;color:#666666;font-size:11pt;padding-bottom:4pt;font-family:"Arial";line-height:1.15;page-break-after:avoid;font-style:italic;orphans:2;widows:2;text-align:left}Obligatorio DevOps
 
-<span class="c18 c8"></span>
+Diagrama de Solución
 
-<span class="c17 c8">Diagrama de Solución</span>
+![](Imagenes/image9.png)
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 557.00px; height: 792.87px;"><img src="images/image9.png"
-style="width: 557.00px; height: 792.87px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+Metodología utilizadas:
 
-<span class="c18 c8"></span>
+1. Planificación y Seguimiento 
 
-<span class="c17 c8">Metodología utilizadas:</span>
+Para la planificación y el seguimiento del obligatorio se implementó la metodología ágil Kanban, la cual permite visualizar el flujo de trabajo, priorizar tareas y mantener una mejora continua en la gestión del equipo.
 
-<span class="c17 c8"></span>
+En nuestro caso, utilizamos un tablero Kanban en GitHub Projects, donde organizamos y controlamos las tareas del equipo. Este tablero se encuentra dividido en las siguientes columnas, que representan los distintos estados del trabajo:
 
-1.  <span class="c1">Planificación y Seguimiento </span>
+* To Do (Por hacer): aquí registramos todas las tareas pendientes que aún no fueron iniciadas.  
 
-<span class="c11 c14">Para la planificación y el seguimiento del
-obligatorio se implementó la metodología ágil Kanban, la cual permite
-visualizar el flujo de trabajo, priorizar tareas y mantener una mejora
-continua en la gestión del equipo.</span>
+* In Progress (En progreso): en esta columna se ubican las tareas que están siendo desarrolladas actualmente.  
 
-<span class="c11 c14">En nuestro caso, utilizamos un tablero Kanban en
-GitHub Projects, donde organizamos y controlamos las tareas del equipo.
-Este tablero se encuentra dividido en las siguientes columnas, que
-representan los distintos estados del trabajo:</span>
+* Done (Hecho): finalmente, en esta columna se mueven las tareas completadas y aprobadas por el equipo.  
 
-- <span class="c8">To Do (Por hacer)</span><span class="c11 c14">: aquí
-  registramos todas las tareas pendientes que aún no fueron iniciadas.  
-  </span>
-- <span class="c8">In Progress (En
-  progreso)</span><span class="c11 c14">: en esta columna se ubican las
-  tareas que están siendo desarrolladas actualmente.  
-  </span>
-- <span class="c8">Done (Hecho)</span><span class="c11 c14">:
-  finalmente, en esta columna se mueven las tareas completadas y
-  aprobadas por el equipo.  
-  </span>
 
-<span class="c11 c14">De esta forma, el tablero Kanban nos permite
-visualizar el estado de avance del proyecto en tiempo real, identificar
-posibles bloqueos y mantener una comunicación fluida entre los miembros
-del equipo.  </span>
+De esta forma, el tablero Kanban nos permite visualizar el estado de avance del proyecto en tiempo real, identificar posibles bloqueos y mantener una comunicación fluida entre los miembros del equipo.  
 
-<span class="c11 c8">Screenshots de evolución del flujo de
-trabajo:</span>
+Screenshots de evolución del flujo de trabajo:
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 352.00px;"><img src="images/image11.png"
-style="width: 601.70px; height: 352.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+![](Imagenes/image11.png)
 
-<span class="c11 c8"></span>
+![](Imagenes/image10.png)
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 356.00px;"><img src="images/image10.png"
-style="width: 601.70px; height: 356.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+![](Imagenes/image6.png)
 
-<span class="c11 c8"></span>
+2. Estrategia de ramificación 
 
-<span class="c11 c8"></span>
+![](Imagenes/image2.jpg)
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 342.67px;"><img src="images/image6.png"
-style="width: 601.70px; height: 342.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+El diagrama ilustra de manera visual el flujo de trabajo que seguimos para gestionar el código utilizando una variante simplificada de Git Flow, enfocada en mantener un desarrollo ordenado, controlado y fácilmente rastreable.
 
-<span class="c11 c8"></span>
+En esta estrategia, la rama main actúa como la línea base del proyecto, donde se mantienen las versiones estables del software. Cada punto marcado como V1, V2 y V3 representa una versión liberada o un hito importante dentro del desarrollo. Estas versiones solo se generan cuando el código ha sido completamente integrado y validado.
 
-<span class="c8 c11"></span>
+A partir de la rama principal, se crean ramas feature/ destinadas al desarrollo de nuevas funcionalidades. En el diagrama se observa cómo cada funcionalidad se desarrolla de manera aislada en su propia rama (feature/1 y feature/2). Esta separación permite trabajar en paralelo sin interferir con el código estable.
 
-<span class="c11 c8"></span>
+Una vez completada la funcionalidad, la rama feature se integra nuevamente en main mediante un merge. Esto se representa con las flechas ascendentes hacia los puntos de versión posteriores. Así, por ejemplo, una funcionalidad desarrollada en feature/1 contribuye a la creación de la versión V2, mientras que otra desarrollada en feature/2 se integra en la versión V3.
 
-<span class="c11 c8"></span>
+3. Testing y Calidad 
 
-<span class="c11 c8"></span>
+#### Pruebas funcionales (Postman)
 
-<span class="c11 c8"></span>
+Se realizaron pruebas funcionales directamente en el pipeline de CI/CD para asegurar que las distintas etapas del flujo de trabajo funcionen correctamente. Estas pruebas permiten verificar que los endpoints y la lógica de la aplicación se ejecuten como se espera antes de desplegar.
 
-<span class="c11 c14"></span>
+Resultado de las pruebas en el pipeline:
 
-1.  <span class="c1">Estrategia de ramificación </span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 222.67px;"><img src="images/image2.jpg"
-style="width: 601.70px; height: 222.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
-
-<span class="c5">El diagrama ilustra de manera visual el flujo de
-trabajo que seguimos para gestionar el código utilizando una variante
-simplificada de Git Flow, enfocada en mantener un desarrollo ordenado,
-controlado y fácilmente rastreable.</span>
-
-<span class="c5">En esta estrategia, la rama main actúa como la línea
-base del proyecto, donde se mantienen las versiones estables del
-software. Cada punto marcado como V1, V2 y V3 representa una versión
-liberada o un hito importante dentro del desarrollo. Estas versiones
-solo se generan cuando el código ha sido completamente integrado y
-validado.</span>
-
-<span class="c5">A partir de la rama principal, se crean ramas feature/
-destinadas al desarrollo de nuevas funcionalidades. En el diagrama se
-observa cómo cada funcionalidad se desarrolla de manera aislada en su
-propia rama (feature/1 y feature/2). Esta separación permite trabajar en
-paralelo sin interferir con el código estable.</span>
-
-<span class="c9">Una vez completada la funcionalidad, la rama feature se
-integra nuevamente en main mediante un
-</span><span class="c9 c10">merge</span><span class="c5">. Esto se
-representa con las flechas ascendentes hacia los puntos de versión
-posteriores. Así, por ejemplo, una funcionalidad desarrollada en
-feature/1 contribuye a la creación de la versión V2, mientras que otra
-desarrollada en feature/2 se integra en la versión V3.</span>
-
-<span class="c5"></span>
-
-1.  <span class="c1">Testing y Calidad </span>
-
-#### <span class="c1">Pruebas funcionales (Postman)</span>
-
-<span class="c5">Se realizaron pruebas funcionales directamente en el
-pipeline de CI/CD para asegurar que las distintas etapas del flujo de
-trabajo funcionen correctamente. Estas pruebas permiten verificar que
-los endpoints y la lógica de la aplicación se ejecuten como se espera
-antes de desplegar.</span>
-
-<span class="c5">Resultado de las pruebas en el pipeline:</span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 578.00px; height: 439.00px;"><img src="images/image15.png"
-style="width: 578.00px; height: 439.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
-
-<span class="c1"></span>
-
-<span class="c1">Análisis de Código Estático(SonarQube)</span>
-
-<span class="c5">Durante el análisis realizado en SonarQube se
-identificaron varios puntos críticos relacionados con la calidad,
-seguridad y mantenibilidad del código en los distintos proyectos del
-repositorio. A continuación, se resumen los aspectos más
-relevantes.</span>
-
-### <span class="c12 c14">Hallazgos Importantes</span>
-
-- <span class="c9">El proyecto DevOpsMain presenta un estado
-  </span><span class="c10 c9">Failed</span><span class="c5"> y concentra
-  una cantidad significativa de problemas, incluyendo 16 issues de
-  seguridad, 15 issues de confiabilidad y 29 code smells. Además, no
-  cuenta con ningún nivel de cobertura de pruebas, lo cual representa un
-  riesgo elevado en términos de estabilidad y calidad.  
-  </span>
-- <span class="c5">En DevOpsInventory-Service se detectaron 2 issues de
-  seguridad, 4 issues de confiabilidad, 16 code smells y un porcentaje
-  de duplicación del 8.8%, considerado alto para su tamaño.  
-  </span>
-- <span class="c5">El proyecto DevOpsFront presenta 16 issues de
-  confiabilidad y 29 code smells, reflejando problemas de mantenibilidad
-  y potenciales fallos futuros.  
-  </span>
-- <span class="c5">En DevOpsProduct-Service se identificó un issue de
-  seguridad y la ausencia de revisión en los hotspots detectados.  
-  </span>
-- <span class="c5">A nivel general, se observa una tendencia común de
-  alta cantidad de code smells, falta de cobertura de pruebas y ausencia
-  de revisión de hotspots en varios de los proyectos analizados.  
-  </span>
-
-### <span class="c12 c14">Mejoras Importantes</span>
-
-- <span class="c5">Priorizar la corrección de los issues de seguridad en
-  todos los servicios, especialmente en DevOpsMain y
-  DevOpsInventory-Service, por su impacto directo en la integridad del
-  sistema.  
-  </span>
-- <span class="c9">Implementar y ampliar el uso de pruebas unitarias,
-  con el objetivo de incrementar significativamente la cobertura,
-  particularmente en
-  </span><span class="c10 c9">DevOpsMain</span><span class="c5">, donde
-  actualmente es inexistente.  
-  </span>
-- <span class="c5">Reducir el nivel de duplicación de código presente en
-  Inventory-Service mediante la refactorización y reutilización de
-  componentes y funciones comunes.  
-  </span>
-- <span class="c5">Abordar la disminución de los code smells en
-  DevOpsFront y DevOpsMain para mejorar la mantenibilidad general del
-  código.  
-  </span>
-- <span class="c5">Completar la revisión de hotspots de seguridad en los
-  proyectos donde aún no se ha realizado, como DevOpsInventory-Service y
-  DevOpsProduct-Service.  
-  </span>
-- <span class="c5">Revisar y corregir la configuración del análisis en
-  DevOpsMain, de forma que permita ejecutar el proceso de evaluación sin
-  errores.</span>
-
-### <span class="c12 c8">Justificación sobre la Integración en el Pipeline</span>
-
-<span class="c5">No se consideró necesario añadir estos controles
-directamente dentro del pipeline de CI/CD, dado que se implementaron
-Quality Gates a través de SonarCloud. Estos Quality Gates permiten
-evaluar automáticamente la calidad del código, bloquear despliegues en
-caso de incumplimiento y centralizar todas las métricas esenciales de
-seguridad, mantenimiento y confiabilidad en un único sistema de
-auditoría continua.</span>
-
-<span class="c5"></span>
-
-<span class="c1">Capturas dentro de SonarQube:</span>
-
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 664.00px; height: 273.50px;"><img src="images/image8.png"
-style="width: 664.00px; height: 273.50px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 662.00px; height: 313.19px;"><img src="images/image3.png"
-style="width: 662.00px; height: 313.19px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
-
-<span class="c1"></span>
-
-1.  <span class="c1">Infraestructura como Código(Iac)</span>
-
-<span class="c5">Se generó toda la infraestructura necesaria para los
-tres entornos del proyecto (dev, test y main) utilizando
-Terraform.</span>
-
-<span class="c5">Mediante el uso de terraform.workspace, se logró que la
-misma configuración declare y despliegue automáticamente los recursos
-apropiados para cada ambiente, evitando duplicar código y manteniendo
-una infraestructura consistente y fácil de mantener.</span>
-
-<span class="c5">Con este enfoque, cada entorno cuenta con su propio
-conjunto aislado de recursos (EKS, dashboards, alertas, Lambda, etc.),
-permitiendo realizar pruebas y despliegues de manera independiente sin
-afectar a los demás ambientes.</span>
-
-<span class="c8 c9">Pruebas:</span><span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 182.67px;"><img src="images/image13.png"
-style="width: 601.70px; height: 182.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
-
-<span class="c5"></span>
-
-1.  <span class="c8 c9">Control de Versiones</span>
-
-<span class="c9">Para el control de versiones del proyecto se utilizó
-Git, permitiendo gestionar los cambios del código de forma segura,
-colaborativa y trazable. Además, se empleó GitHub como plataforma
-centralizada para alojar los repositorios, gestionar
-</span><span class="c10 c9">pull requests</span><span class="c5">,
-revisar código y coordinar el flujo de trabajo entre equipos.</span>
-
-<span class="c5">Nuestra solución se estructuró dentro de una
-organización de GitHub, diseñada para separar responsabilidades y
-facilitar el mantenimiento, escalabilidad e independencia de cada
-servicio. Esta organización está compuesta por cuatro repositorios, cada
-uno enfocado en un componente específico del sistema:</span>
-
-- <span class="c9">DevOpsMain:</span><span class="c10 c9">  
-  </span><span class="c5"> Contiene la infraestructura como código
-  (IaC), automatizaciones, pipelines, Terraform, configuración de
-  entornos y todos los recursos necesarios para desplegar y gestionar
-  los ambientes dev, test y main.  
-  </span>
-- <span class="c9">DevOps-Inventory-Service:</span><span class="c10 c9">  
-  </span><span class="c5"> Servicio backend responsable de la lógica
-  relacionada al inventario. Está desarrollado en Go.  
-  </span>
-- <span class="c9">DevOpsProduct-Service:</span><span class="c10 c9">  
-  </span><span class="c5"> Microservicio backend encargado de la gestión
-  de productos. Desarrollado en Python.  
-  </span>
-- <span class="c9">DevOpsFront</span><span class="c9">:</span><span class="c10 c9">  
-  </span><span class="c5"> Repositorio del frontend de la aplicación.
-  Contiene la UI.</span>
-
-<span class="c5"></span>
-
-<span class="c1"></span>
-
-<span class="c1"></span>
+![](Imagenes/image15.png)
 
-1.  <span class="c1">Servicios Serverless</span>
+Análisis de Código Estático(SonarQube)
 
-<span class="c5">Se implementó una función Lambda que se integra en el
-pipeline de CI/CD para notificar automáticamente cuando el pipeline
-finaliza. Esta función envía alertas al canal de Discord configurado,
-permitiendo al equipo recibir notificaciones en tiempo real sobre el
-estado de la ejecución.</span>
+Durante el análisis realizado en SonarQube se identificaron varios puntos críticos relacionados con la calidad, seguridad y mantenibilidad del código en los distintos proyectos del repositorio. A continuación, se resumen los aspectos más relevantes.
 
-<span class="c1">Resultado de las pruebas:</span>
+### Hallazgos Importantes
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 355.00px; height: 216.00px;"><img src="images/image4.png"
-style="width: 355.00px; height: 216.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+* El proyecto DevOpsMain presenta un estado Failed y concentra una cantidad significativa de problemas, incluyendo 16 issues de seguridad, 15 issues de confiabilidad y 29 code smells. Además, no cuenta con ningún nivel de cobertura de pruebas, lo cual representa un riesgo elevado en términos de estabilidad y calidad.  
 
-<span class="c1"></span>
+* En DevOpsInventory-Service se detectaron 2 issues de seguridad, 4 issues de confiabilidad, 16 code smells y un porcentaje de duplicación del 8.8%, considerado alto para su tamaño.  
 
-<span class="c1"></span>
+* El proyecto DevOpsFront presenta 16 issues de confiabilidad y 29 code smells, reflejando problemas de mantenibilidad y potenciales fallos futuros.  
 
-<span class="c1"></span>
+* En DevOpsProduct-Service se identificó un issue de seguridad y la ausencia de revisión en los hotspots detectados.  
 
-<span class="c1"></span>
+* A nivel general, se observa una tendencia común de alta cantidad de code smells, falta de cobertura de pruebas y ausencia de revisión de hotspots en varios de los proyectos analizados.  
 
-<span class="c1"></span>
 
-<span class="c1"></span>
+### Mejoras Importantes
 
-<span class="c1"></span>
+* Priorizar la corrección de los issues de seguridad en todos los servicios, especialmente en DevOpsMain y DevOpsInventory-Service, por su impacto directo en la integridad del sistema.  
 
-<span class="c1"></span>
+* Implementar y ampliar el uso de pruebas unitarias, con el objetivo de incrementar significativamente la cobertura, particularmente en DevOpsMain, donde actualmente es inexistente.  
 
-<span class="c1"></span>
+* Reducir el nivel de duplicación de código presente en Inventory-Service mediante la refactorización y reutilización de componentes y funciones comunes.  
 
-<span class="c1"></span>
+* Abordar la disminución de los code smells en DevOpsFront y DevOpsMain para mejorar la mantenibilidad general del código.  
 
-<span class="c1"></span>
+* Completar la revisión de hotspots de seguridad en los proyectos donde aún no se ha realizado, como DevOpsInventory-Service y DevOpsProduct-Service.  
 
-1.  <span class="c1">Observabilidad – Dashboard y Alertas en
-    CloudWatch</span>
+* Revisar y corregir la configuración del análisis en DevOpsMain, de forma que permita ejecutar el proceso de evaluación sin errores.
 
-<span class="c1"></span>
+### Justificación sobre la Integración en el Pipeline
 
-<span class="c5">Se implementó un dashboard en AWS CloudWatch que
-permite monitorear métricas críticas del clúster EKS, asegurando
-visibilidad sobre el estado y rendimiento de los recursos. El dashboard
-incluye gráficos para:</span>
+No se consideró necesario añadir estos controles directamente dentro del pipeline de CI/CD, dado que se implementaron Quality Gates a través de SonarCloud. Estos Quality Gates permiten evaluar automáticamente la calidad del código, bloquear despliegues en caso de incumplimiento y centralizar todas las métricas esenciales de seguridad, mantenimiento y confiabilidad en un único sistema de auditoría continua.
 
-- <span class="c5">Uso de CPU y memoria de pods y nodos.  
-  </span>
-- <span class="c5">Estado de pods y nodos, incluyendo pods pendientes,
-  nodos fallidos y pods en ejecución.  
-  </span>
-- <span class="c5">Rendimiento del API Server, con métricas de errores
-  4XX/5XX y latencias P99.  
-  </span>
-- <span class="c5">Tráfico de red y almacenamiento, mostrando bytes
-  transmitidos y recibidos.</span>
+Capturas dentro de SonarQube:
 
-<span class="c5">Además se configuraron dos alertas críticas utilizando
-CloudWatch Alarms y SNS, y para facilitar las pruebas, se definieron
-thresholds muy bajos:</span>
+![](Imagenes/image8.png)![](Imagenes/image3.png)
 
-1.  <span class="c5">Alerta de CPU alta: Se dispara cuando el uso
-    promedio de CPU de los pods supera el 2%.  
-    </span>
-2.  <span class="c5">Alerta de memoria alta: Se dispara cuando el uso
-    promedio de memoria de los pods supera el 2%.  
-    </span>
+4. Infraestructura como Código(Iac)
 
-<span class="c5">Estas alertas están suscritas a una función Lambda, que
-envía notificaciones al canal de Discord, permitiendo al equipo recibir
-avisos en tiempo real sobre condiciones relevantes en el clúster.</span>
+Se generó toda la infraestructura necesaria para los tres entornos del proyecto (dev, test y main) utilizando Terraform.
 
-<span class="c1">Pruebas:</span>
+Mediante el uso de terraform.workspace, se logró que la misma configuración declare y despliegue automáticamente los recursos apropiados para cada ambiente, evitando duplicar código y manteniendo una infraestructura consistente y fácil de mantener.
 
-<span class="c1">Dashboard:</span>
+Con este enfoque, cada entorno cuenta con su propio conjunto aislado de recursos (EKS, dashboards, alertas, Lambda, etc.), permitiendo realizar pruebas y despliegues de manera independiente sin afectar a los demás ambientes.
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 273.81px;"><img src="images/image12.png"
-style="width: 624.00px; height: 273.81px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+Pruebas:![](Imagenes/image13.png)
 
-<span class="c1"></span>
+5. Control de Versiones
 
-<span class="c1"></span>
+Para el control de versiones del proyecto se utilizó Git, permitiendo gestionar los cambios del código de forma segura, colaborativa y trazable. Además, se empleó GitHub como plataforma centralizada para alojar los repositorios, gestionar pull requests, revisar código y coordinar el flujo de trabajo entre equipos.
 
-<span class="c1"></span>
+Nuestra solución se estructuró dentro de una organización de GitHub, diseñada para separar responsabilidades y facilitar el mantenimiento, escalabilidad e independencia de cada servicio. Esta organización está compuesta por cuatro repositorios, cada uno enfocado en un componente específico del sistema:
 
-<span class="c1"></span>
+* DevOpsMain:  
+ Contiene la infraestructura como código (IaC), automatizaciones, pipelines, Terraform, configuración de entornos y todos los recursos necesarios para desplegar y gestionar los ambientes dev, test y main.  
 
-<span class="c1"></span>
+* DevOps-Inventory-Service:  
+ Servicio backend responsable de la lógica relacionada al inventario. Está desarrollado en Go.  
 
-<span class="c1">Alerta Cpu:</span>
+* DevOpsProduct-Service:  
+ Microservicio backend encargado de la gestión de productos. Desarrollado en Python.  
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 261.33px;"><img src="images/image5.png"
-style="width: 601.70px; height: 261.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+* DevOpsFront:  
+ Repositorio del frontend de la aplicación. Contiene la UI.
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 458.00px; height: 81.00px;"><img src="images/image1.png"
-style="width: 458.00px; height: 81.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+6. Servicios Serverless
 
-<span class="c1"></span>
+Se implementó una función Lambda que se integra en el pipeline de CI/CD para notificar automáticamente cuando el pipeline finaliza. Esta función envía alertas al canal de Discord configurado, permitiendo al equipo recibir notificaciones en tiempo real sobre el estado de la ejecución.
 
-<span class="c1"></span>
+Resultado de las pruebas:
 
-<span class="c1"></span>
+![](Imagenes/image4.png)
 
-<span class="c1"></span>
+7. Observabilidad – Dashboard y Alertas en CloudWatch
 
-<span class="c1"></span>
+Se implementó un dashboard en AWS CloudWatch que permite monitorear métricas críticas del clúster EKS, asegurando visibilidad sobre el estado y rendimiento de los recursos. El dashboard incluye gráficos para:
 
-<span class="c1"></span>
+* Uso de CPU y memoria de pods y nodos.  
 
-<span class="c1"></span>
+* Estado de pods y nodos, incluyendo pods pendientes, nodos fallidos y pods en ejecución.  
 
-<span class="c1"></span>
+* Rendimiento del API Server, con métricas de errores 4XX/5XX y latencias P99.  
 
-<span class="c1"></span>
+* Tráfico de red y almacenamiento, mostrando bytes transmitidos y recibidos.
 
-<span class="c1">Alerta Memoria :</span>
+Además se configuraron dos alertas críticas utilizando CloudWatch Alarms y SNS, y para facilitar las pruebas, se definieron thresholds muy bajos:
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 202.67px;"><img src="images/image7.png"
-style="width: 601.70px; height: 202.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+1. Alerta de CPU alta: Se dispara cuando el uso promedio de CPU de los pods supera el 2%.  
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 428.00px; height: 79.00px;"><img src="images/image14.png"
-style="width: 428.00px; height: 79.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+2. Alerta de memoria alta: Se dispara cuando el uso promedio de memoria de los pods supera el 2%.  
 
-<span class="c1"></span>
 
-<span class="c1"></span>
+Estas alertas están suscritas a una función Lambda, que envía notificaciones al canal de Discord, permitiendo al equipo recibir avisos en tiempo real sobre condiciones relevantes en el clúster.
 
-<span class="c1"></span>
+Pruebas:
 
-<span class="c17 c14"></span>
+Dashboard:
 
-<span class="c8 c17"></span>
+![](Imagenes/image12.png)
 
-<span class="c1"></span>
+Alerta Cpu:
 
-<span class="c1"></span>
+![](Imagenes/image5.png)
 
-<span class="c1"></span>
+![](Imagenes/image1.png)
 
-<span class="c1"></span>
+Alerta Memoria :
 
-<span class="c1"></span>
+![](Imagenes/image7.png)
 
-<span class="c1"></span>
+![](Imagenes/image14.png)
 
-<span class="c1"></span>
+8. GitHub Actions:
 
-<span class="c1"></span>
+Para automatizar todo el flujo de desarrollo y despliegue de la aplicación, implementamos un sistema CI/CD completo utilizando GitHub Actions. La solución está organizada con cuatro pipelines principales, separados por CI y CD, tanto para el backend como para el frontend.
 
-1.  <span class="c1">GitHub Actions:</span>
+Pipelines de Integración Continua (CI)
 
-<span class="c5">Para automatizar todo el flujo de desarrollo y
-despliegue de la aplicación, implementamos un sistema CI/CD completo
-utilizando GitHub Actions. La solución está organizada con cuatro
-pipelines principales, separados por CI y CD, tanto para el backend como
-para el frontend.</span>
+1. CI Backend  
 
-<span class="c12 c8">Pipelines de Integración Continua (CI)</span>
+* Ejecuta pruebas, validaciones y el build del backend.  
 
-1.  <span class="c5">CI Backend  
-    </span>
+* Levanta un entorno de testing con Docker Compose para los microservicios Product e Inventory.  
 
-- <span class="c5">Ejecuta pruebas, validaciones y el build del
-  backend.  
-  </span>
-- <span class="c5">Levanta un entorno de testing con Docker Compose para
-  los microservicios Product e Inventory.  
-  </span>
-- <span class="c5">Corre pruebas funcionales con Newman (Postman).  
-  </span>
-- <span class="c5">Si todo pasa correctamente, construye las imágenes
-  Docker y las publica en Amazon ECR según el entorno (main, dev o
-  test).  
-  </span>
+* Corre pruebas funcionales con Newman (Postman).  
 
-1.  <span class="c5">CI Frontend  
-    </span>
+* Si todo pasa correctamente, construye las imágenes Docker y las publica en Amazon ECR según el entorno (main, dev o test).  
 
-- <span class="c5">Clona el proyecto del frontend.  
-  </span>
-- <span class="c5">Corre análisis de calidad con SonarCloud.  
-  </span>
-- <span class="c5">Construye la imagen Docker del frontend y la publica
-  en Amazon ECR diferenciada por entorno.  
-  </span>
+2. CI Frontend  
 
-<span class="c5">Ambos CI se ejecutan automáticamente al hacer push a
-las ramas:  
-main, dev y test.</span>
+* Clona el proyecto del frontend.  
 
-<span class="c5"></span>
+* Corre análisis de calidad con SonarCloud.  
 
-### <span class="c8 c12">Pipelines de Despliegue Continuo (CD)</span>
+* Construye la imagen Docker del frontend y la publica en Amazon ECR diferenciada por entorno.  
 
-<span class="c5">Los pipelines de CD se ejecutan únicamente si su CI
-correspondiente terminó exitosamente.</span>
 
-1.  <span class="c5">CD Backend  
-    </span>
+Ambos CI se ejecutan automáticamente al hacer push a las ramas:  
+ main, dev y test.
 
-- <span class="c5">Detecta automáticamente el entorno en el que debe
-  desplegar (main, dev o test).  
-  </span>
-- <span class="c5">Configura AWS y se conecta al clúster EKS del
-  entorno.  
-  </span>
-- <span class="c5">Reemplaza las variables necesarias en los manifests
-  de Kubernetes.  
-  </span>
-- <span class="c5">Aplica los deployments de Redis, Postgres, Product
-  Service e Inventory Service.  
-  </span>
-- <span class="c5">Envía una notificación mediante una Lambda indicando
-  que el despliegue terminó correctamente.  
-  </span>
+### Pipelines de Despliegue Continuo (CD)
 
-1.  <span class="c5">CD Frontend  
-    </span>
+Los pipelines de CD se ejecutan únicamente si su CI correspondiente terminó exitosamente.
 
-- <span class="c5">Funciona igual que el CD Backend, pero aplicando los
-  manifests del frontend (API Gateway).  
-  </span>
-- <span class="c5">Notifica también al finalizar usando la Lambda del
-  entorno.</span>
+3. CD Backend  
 
-<span class="c5"></span>
+* Detecta automáticamente el entorno en el que debe desplegar (main, dev o test).  
 
-<span class="c8 c9">Pruebas de Ejecución del
-Pipeline</span><span class="c5">:</span>
+* Configura AWS y se conecta al clúster EKS del entorno.  
 
-<span class="c1"></span>
+* Reemplaza las variables necesarias en los manifests de Kubernetes.  
 
-<span style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 601.70px; height: 156.00px;"><img src="images/image16.png"
-style="width: 601.70px; height: 156.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" /></span>
+* Aplica los deployments de Redis, Postgres, Product Service e Inventory Service.  
 
-<span class="c1"></span>
+* Envía una notificación mediante una Lambda indicando que el despliegue terminó correctamente.  
+
+4. CD Frontend  
+
+* Funciona igual que el CD Backend, pero aplicando los manifests del frontend (API Gateway).  
+
+* Notifica también al finalizar usando la Lambda del entorno.
+
+Pruebas de Ejecución del Pipeline:
+
+![](Imagenes/image16.png)
+

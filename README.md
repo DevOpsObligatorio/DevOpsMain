@@ -41,6 +41,13 @@ A partir de la rama principal, se crean ramas feature/ destinadas al desarrollo 
 
 Una vez completada la funcionalidad, la rama feature se integra nuevamente en main mediante un merge. Esto se representa con las flechas ascendentes hacia los puntos de versión posteriores. Así, por ejemplo, una funcionalidad desarrollada en feature/1 contribuye a la creación de la versión V2, mientras que otra desarrollada en feature/2 se integra en la versión V3.
 
+Justificación de la estrategia de ramificación elegida
+
+Se eligió esta estrategia de ramificación porque permite mantener un desarrollo ordenado y predecible sin agregar complejidad innecesaria. Al trabajar con ramas feature separadas de la rama main, el equipo puede desarrollar nuevas funcionalidades de forma aislada, evitando conflictos y asegurando que el código estable nunca se vea afectado.
+
+Además, integrar cada feature únicamente cuando está completa y validada ayuda a garantizar que las versiones liberadas (V1, V2, V3) sean consistentes, estables y fáciles de rastrear.
+Esta variante simplificada de Git Flow ofrece el equilibrio justo entre organización, control y agilidad, adaptándose muy bien al tamaño del equipo y a las necesidades del proyecto.
+
 3. Testing y Calidad 
 
 #### Pruebas funcionales (Postman)

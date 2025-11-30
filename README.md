@@ -228,6 +228,10 @@ Pruebas de Ejecución del Pipeline:
 
 ![](Imagenes/image16.png)
 
+Pruebas de que la aplicación es accesible desde internet:
+
+![](Imagenes/image17.png)
+
 ### Justificación del uso de herramientas de IA
 
 Durante el desarrollo del entregable se utilizaron herramientas de Inteligencia Artificial como apoyo para mejorar la claridad, redacción y presentación del documento. Su uso se limitó exclusivamente a tareas de asistencia, tales como:

@@ -45,7 +45,7 @@ Justificación de la estrategia de ramificación elegida
 
 Se eligió esta estrategia de ramificación porque permite mantener un desarrollo ordenado y predecible sin agregar complejidad innecesaria. Al trabajar con ramas feature separadas de la rama main, el equipo puede desarrollar nuevas funcionalidades de forma aislada, evitando conflictos y asegurando que el código estable nunca se vea afectado.
 
-Además, integrar cada feature únicamente cuando está completa y validada ayuda a garantizar que las versiones liberadas (V1, V2, V3) sean consistentes, estables y fáciles de rastrear.
+Además, integrar cada feature únicamente cuando está completa y validada ayuda a garantizar que las versiones liberadas sean consistentes, estables y fáciles de rastrear.
 Esta variante simplificada de Git Flow ofrece el equilibrio justo entre organización, control y agilidad, adaptándose muy bien al tamaño del equipo y a las necesidades del proyecto.
 
 3. Testing y Calidad 

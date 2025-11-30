@@ -228,3 +228,14 @@ Pruebas de Ejecución del Pipeline:
 
 ![](Imagenes/image16.png)
 
+### Justificación del uso de herramientas de IA
+
+Durante el desarrollo del entregable se utilizaron herramientas de Inteligencia Artificial como apoyo para mejorar la claridad, redacción y presentación del documento. Su uso se limitó exclusivamente a tareas de asistencia, tales como:
+
+- Reformular textos para obtener explicaciones más claras y concisas.
+- Corregir estructuras gramaticales o de estilo.
+- Generar descripciones más ordenadas a partir de ideas ya definidas por el equipo.
+- Convertir formatos (por ejemplo, HTML a Markdown) de forma más eficiente.
+
+Es importante destacar que **todas las decisiones técnicas, configuraciones, diagramas, implementaciones y resultados del proyecto fueron realizados manualmente por el equipo**.  
+La IA funcionó únicamente como una herramienta de apoyo documental, sin intervenir en la elaboración de la solución técnica ni en la toma de decisiones del proyecto.

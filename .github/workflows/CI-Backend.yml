@@ -13,8 +13,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      ENVIRONMENT: ${{ github.ref_name }}   # main | dev | test
-      IMAGE_TAG: latest                     
+      ENVIRONMENT: ${{ github.ref_name }}
+      IMAGE_TAG: latest
 
     steps:
       - name: Checkout current repo
@@ -85,10 +85,7 @@ jobs:
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v2
 
-      # ================================================================
       # PRODUCT SERVICE
-      # ================================================================
-
       - name: Build Product Service image
         run: docker build -t product-service ./product-service
 
@@ -104,10 +101,7 @@ jobs:
           ECR_REPOSITORY: product-service-${{ env.ENVIRONMENT }}
         run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
 
-      # ================================================================
       # INVENTORY SERVICE
-      # ================================================================
-
       - name: Build Inventory Service image
         run: docker build -t inventory-service ./inventory-service
 
@@ -122,3 +116,4 @@ jobs:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
           ECR_REPOSITORY: inventory-service-${{ env.ENVIRONMENT }}
         run: docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+

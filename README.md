@@ -2,11 +2,11 @@
 
 ## Autores: Rodrigo Delgado (299328) y Bruno Iglesias (305558)
 
-### Diagrama de Solución
+### Diagrama de Solución:
 
 ![](Imagenes/image9.png)
 
-Metodología utilizadas:
+### Metodología utilizadas:
 
 1. Planificación y Seguimiento 
 
@@ -52,7 +52,7 @@ Esta variante simplificada de Git Flow ofrece el equilibrio justo entre organiza
 
 3. Testing y Calidad 
 
-#### Pruebas funcionales (Postman)
+### Pruebas funcionales (Postman)
 
 Se realizaron pruebas funcionales directamente en el pipeline de CI/CD para asegurar que las distintas etapas del flujo de trabajo funcionen correctamente. Estas pruebas permiten verificar que los endpoints y la lógica de la aplicación se ejecuten como se espera antes de desplegar.
 
@@ -234,7 +234,7 @@ Pruebas de que la aplicación es accesible desde internet:
 
 ![](Imagenes/image17.png)
 
-### Justificación del uso de herramientas de IA:
+### Justificación del uso de herramientas de IA
 
 Durante el desarrollo del obligatorio se utilizaron herramientas de Inteligencia Artificial como apoyo tanto para la documentación como para la automatización de ciertos procesos técnicos. Su uso se aplicó en las siguientes áreas:
 

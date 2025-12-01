@@ -1,6 +1,8 @@
-#Obligatorio DevOps
+# Obligatorio DevOps
 
-###Diagrama de Solución
+## Autores: Rodrigo Delgado (299328) y Bruno Iglesias (305558)
+
+### Diagrama de Solución
 
 ![](Imagenes/image9.png)
 
@@ -178,7 +180,7 @@ Alerta Memoria :
 
 Para automatizar todo el flujo de desarrollo y despliegue de la aplicación, implementamos un sistema CI/CD completo utilizando GitHub Actions. La solución está organizada con cuatro pipelines principales, separados por CI y CD, tanto para el backend como para el frontend.
 
-###Pipelines de Integración Continua (CI)
+### Pipelines de Integración Continua (CI)
 
 1. CI Backend  
 

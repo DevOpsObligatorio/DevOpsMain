@@ -253,3 +253,15 @@ Durante el desarrollo del obligatorio se utilizaron herramientas de Inteligencia
   - Sugerencias para estructurar y optimizar el **pipeline de CI/CD**.
   - Apoyo en la definición y estandarización de plantillas para **Infraestructura como Código (IaC)**.
   - Validación conceptual de flujos automatizados antes de su implementación.
+
+### Limitaciones técnicas
+
+Durante el desarrollo del proyecto, se identificó una limitación importante relacionada con el cumplimiento del **Quality Gate de SonarCloud**.  
+Si bien se integró correctamente el análisis estático dentro del pipeline de CI/CD, el repositorio no alcanzó los umbrales mínimos definidos por SonarCloud para aprobar el Quality Gate.
+
+En particular, se observaron dos incumplimientos principales:
+
+- **Cobertura insuficiente de pruebas (0%)**, mientras que el estándar exigido por el Quality Gate requería un porcentaje mínimo del **80%** sobre el código nuevo.
+- **Falta de revisión de Security Hotspots (0%)**, valor que debía encontrarse al **100% revisado** para que el análisis se considerara satisfactorio.
+
+Como consecuencia, los pipelines que dependían de la aprobación del Quality Gate quedaban marcados como fallidos, limitando la automatización completa del proceso y afectando el cumplimiento de uno de los objetivos de calidad planteados.

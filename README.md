@@ -236,7 +236,7 @@ Pruebas de Ejecución del Pipeline:
 
 Diagrama de CI/CD:
 
-![](Imagenes/image19.jpg)
+![](Imagenes/image19.png)
 
 Pruebas de que la aplicación es accesible desde internet:
 

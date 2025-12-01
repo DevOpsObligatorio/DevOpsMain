@@ -41,7 +41,7 @@ A partir de la rama principal, se crean ramas feature/ destinadas al desarrollo 
 
 Una vez completada la funcionalidad, la rama feature se integra nuevamente en main mediante un merge. Esto se representa con las flechas ascendentes hacia los puntos de versión posteriores. Así, por ejemplo, una funcionalidad desarrollada en feature/1 contribuye a la creación de la versión V2, mientras que otra desarrollada en feature/2 se integra en la versión V3.
 
-Justificación de la estrategia de ramificación elegida
+###Justificación de la estrategia de ramificación elegida:
 
 Se eligió esta estrategia de ramificación porque permite mantener un desarrollo ordenado y predecible sin agregar complejidad innecesaria. Al trabajar con ramas feature separadas de la rama main, el equipo puede desarrollar nuevas funcionalidades de forma aislada, evitando conflictos y asegurando que el código estable nunca se vea afectado.
 
@@ -232,14 +232,14 @@ Pruebas de que la aplicación es accesible desde internet:
 
 ![](Imagenes/image17.png)
 
-### Justificación del uso de herramientas de IA
+### Justificación del uso de herramientas de IA:
 
-Durante el desarrollo del entregable se utilizaron herramientas de Inteligencia Artificial como apoyo para mejorar la claridad, redacción y presentación del documento. Su uso se limitó exclusivamente a tareas de asistencia, tales como:
+Durante el desarrollo del obligatorio se utilizaron herramientas de Inteligencia Artificial como apoyo tanto para la documentación como para la automatización de ciertos procesos técnicos. Su uso se aplicó en las siguientes áreas:
 
-- Reformular textos para obtener explicaciones más claras y concisas.
-- Corregir estructuras gramaticales o de estilo.
-- Generar descripciones más ordenadas a partir de ideas ya definidas por el equipo.
-- Convertir formatos (por ejemplo, HTML a Markdown) de forma más eficiente.
-
-Es importante destacar que **todas las decisiones técnicas, configuraciones, diagramas, implementaciones y resultados del proyecto fueron realizados manualmente por el equipo**.  
-La IA funcionó únicamente como una herramienta de apoyo documental, sin intervenir en la elaboración de la solución técnica ni en la toma de decisiones del proyecto.
+- **Reformulación y mejora de textos**, permitiendo obtener explicaciones más claras y concisas.
+- **Corrección de estructuras gramaticales y de estilo**, para una presentación más profesional.
+- **Generación de documentación ordenada** a partir de ideas y contenido definidos por el equipo.
+- **Asistencia en la automatización de procesos DevOps**, incluyendo:
+  - Sugerencias para estructurar y optimizar el **pipeline de CI/CD**.
+  - Apoyo en la definición y estandarización de plantillas para **Infraestructura como Código (IaC)**.
+  - Validación conceptual de flujos automatizados antes de su implementación.

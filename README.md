@@ -129,6 +129,12 @@ Nuestra solución se estructuró dentro de una organización de GitHub, diseñad
 * DevOpsFront:  
  Repositorio del frontend de la aplicación. Contiene la UI.
 
+##### Secrets
+
+Además, en el repositorio DevOpsMain se trabajo con los siguientes secrets:
+
+![](Imagenes/image18.png)
+
 #### 6. Servicios Serverless
 
 Se implementó una función Lambda que se integra en el pipeline de CI/CD para notificar automáticamente cuando el pipeline finaliza. Esta función envía alertas al canal de Discord configurado, permitiendo al equipo recibir notificaciones en tiempo real sobre el estado de la ejecución.
@@ -170,7 +176,7 @@ Alerta Cpu:
 
 ![](Imagenes/image1.png)
 
-Alerta Memoria :
+Alerta Memoria:
 
 ![](Imagenes/image7.png)
 
@@ -200,9 +206,7 @@ Para automatizar todo el flujo de desarrollo y despliegue de la aplicación, imp
 
 * Construye la imagen Docker del frontend y la publica en Amazon ECR diferenciada por entorno.  
 
-
-Ambos CI se ejecutan automáticamente al hacer push a las ramas:  
- main, dev y test.
+Ambos CI se ejecutan automáticamente al hacer push a las ramas main, dev y test.
 
 ##### Pipelines de Despliegue Continuo (CD)
 

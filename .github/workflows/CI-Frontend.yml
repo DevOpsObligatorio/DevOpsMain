@@ -28,20 +28,25 @@ jobs:
       # ---------------------------------------------------------
       # SONARCLOUD - QUALITY GATE 
       # ---------------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
-      
+
       - name: Install sonar-scanner
         run: npm install -g sonar-scanner
-      
+
       - name: Run SonarCloud Scan (Frontend)
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          sonar-scanner \
+          run: |
+            sonar-scanner \
             -Dsonar.projectKey=DevOpsObligatorio_DevOpsMain \
             -Dsonar.organization=devopsobligatorio \
             -Dsonar.sources=. \

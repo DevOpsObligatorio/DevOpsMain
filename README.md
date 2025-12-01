@@ -238,6 +238,10 @@ Pruebas de que la aplicación es accesible desde internet:
 
 ![](Imagenes/image17.png)
 
+Diagrama de CI/CD:
+
+![](Imagenes/image19.jpg)
+
 ### Justificación del uso de herramientas de IA
 
 Durante el desarrollo del obligatorio se utilizaron herramientas de Inteligencia Artificial como apoyo tanto para la documentación como para la automatización de ciertos procesos técnicos. Su uso se aplicó en las siguientes áreas:

@@ -234,13 +234,13 @@ Pruebas de Ejecución del Pipeline:
 
 ![](Imagenes/image16.png)
 
-Pruebas de que la aplicación es accesible desde internet:
-
-![](Imagenes/image17.png)
-
 Diagrama de CI/CD:
 
 ![](Imagenes/image19.jpg)
+
+Pruebas de que la aplicación es accesible desde internet:
+
+![](Imagenes/image17.png)
 
 ### Justificación del uso de herramientas de IA
 
